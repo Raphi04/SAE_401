@@ -1,0 +1,16 @@
+header {
+    border-bottom: 1px solid var(--red);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+header #appTitle {
+    width: 120px;
+}
+
+header #bag {
+    width: 30px;
+}

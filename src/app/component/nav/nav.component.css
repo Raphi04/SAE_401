@@ -1,0 +1,17 @@
+nav {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background-color: var(--red);
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+    border-radius: 30px;
+    padding: 7px 0px;
+}
+
+nav img {
+    width: 35px;
+}
