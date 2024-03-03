@@ -1,4 +1,7 @@
-<header>
-    <img src="/assets/ressource/SUSHICo.svg" id="appTitle">
-    <img src="/assets/ressource/Bag.svg" id="bag">
+<header *ngIf="showHeader">
+    <img src="/assets/ressource/sushiKoWhite.svg" id="appTitle">
+    <div>
+        <img src="/assets/ressource/Bag.svg" id="bag">
+        <div id="bagTotalCount">0</div>
+    </div>
 </header>

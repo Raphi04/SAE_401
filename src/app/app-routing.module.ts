@@ -8,10 +8,9 @@ import { AccueilComponent } from './component/accueil/accueil.component';
 import { DemarrageComponent } from './component/demarrage/demarrage.component';
 import { ConnexionComponent } from './component/connexion/connexion.component';
 import { InscriptionComponent } from './component/inscription/inscription.component';
-import { MainComponent } from './component/main/main.component';
+import { BoxComponent } from './component/box/box.component';
 
 const routes: Routes = [
-  { path: "", component: DemarrageComponent },
   { path: "app-header", component: HeaderComponent },
   { path: "app-nav", component: NavComponent },
   { path: "app-menu", component: MenuComponent },
@@ -20,12 +19,12 @@ const routes: Routes = [
   { path: "app-demarrage", component: DemarrageComponent },
   { path: "app-connexion", component: ConnexionComponent },
   { path: "app-inscription", component: InscriptionComponent },
-  { path: "app-main", component: MainComponent }
-
+  { path: "app-box", component: BoxComponent},
+  { path: "**", redirectTo: "app-demarrage" }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

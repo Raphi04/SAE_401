@@ -1,0 +1,158 @@
+#accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding-top: 60px;
+    color: white;
+    background-color: var(--black);
+}
+
+#accueil > #bamboo{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#accueil > #greenTopRight2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    z-index: 1;
+}
+
+#accueil #ourMenu {
+    position: relative;
+    margin-top: 35px;
+    width: calc(90% - 40px);
+    height: 150px;
+    display: flex;
+    padding: 10px 20px;
+    background-color: var(--black);
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#accueil #ourMenu h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#accueil #pointsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+    width: calc(90% - 40px);
+    height: 80px;
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#accueil #pointsContainer h2 {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#accueil #pointsContainer > div {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+#accueil #pointsContainer > div > p {
+    font-family: Poppins;
+    position: absolute;
+    font-size: 1rem;
+    top: -25px;
+    right: 5px;
+}
+
+#accueil #pointsContainer > div > #points {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+}
+
+#accueil #pointsContainer > div > #points::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+
+#accueil > h2 {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    margin: 25px 0px 15px 10%;
+    align-self: flex-start;
+}
+
+#accueil #recommandationsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--black);
+    z-index: 2;
+
+}
+
+#accueil #recommandationsContainer .recommandation {
+    position: relative;
+    min-width: 200px;
+    height: 170px;
+    padding: 10px 20px;
+    border: 2px solid var(--green);
+    background-color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#accueil #recommandationsContainer .recommandation:first-child {
+    margin-left: 5%;
+}
+
+#accueil #recommandationsContainer .recommandation:last-child {
+    margin-right: 5%;
+}
+
+#accueil #recommandationsContainer .recommandation p {
+    font-size: 1.2rem;
+}
+
+#accueil #recommandationsContainer .recommandation > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#accueil #recommandationsContainer .recommandation > div > #stars {
+    display: flex;
+}

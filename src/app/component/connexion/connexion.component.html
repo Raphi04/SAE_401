@@ -1,2 +1,23 @@
-<p>connexion works!</p>
-<a routerLink="/app-main" routerLinkActive="active" id="connexion">Me connecter</a>
+<section id="connexion">
+    <img src="/assets/ressource/greenTopRight.svg" id="greenTopRight">
+    <img src="/assets/ressource/greenBottomLeft.svg" id="greenBottomLeft">
+    <img src="/assets/ressource/sushiKoWhite.svg" alt="SushiKo" id="sushiko">
+    
+    <h2>Connectez-vous</h2>
+    <hr>
+    <form>
+        <div>
+            <label for="email">E-mail*</label>
+            <input type="email" placeholder="sushi@gmail.com" id="email" autocomplete="on">
+        </div>
+        <hr>
+        <div>
+            <label for="mdp">Mot de passe*</label>
+            <input type="password" placeholder="8 caractères minimum" autocomplete="on">
+        </div>
+        <hr>
+    </form>
+    
+    <a routerLink="/app-accueil" routerLinkActive="active" id="connexionButton">Me connecter</a>
+    <a routerLink="/app-inscription" routerLinkActive="active" id="inscriptionButton">Créer mon Compte</a>
+</section>

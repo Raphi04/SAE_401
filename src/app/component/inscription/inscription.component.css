@@ -1,0 +1,102 @@
+section {
+    position: relative;
+    height: calc(100% - 130px);
+    width: calc(100% - 100px);
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 50px;
+}
+
+section > img {
+    width: 175px;
+    z-index: 10;
+}
+
+section > #greenTopRight {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 160px;
+    z-index: 1;
+}
+
+section > #greenBottomLeft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 155px;
+    z-index: 1;
+}
+
+section > h2 {
+    margin-top: 75px;
+    color: var(--white);
+    font-weight: 500;
+    z-index: 10;
+}
+
+section > hr {
+    margin: 7px 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+section > form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+section > form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+section > form > div > label {
+    color: var(--white);
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+section > form > div > input {
+    border: none;
+    outline: none;
+    padding: 5px 5px 5px 15px;
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: white;
+    background-color: transparent;
+}
+
+section > form > hr {
+    margin: 7px 0px;
+}
+
+section > #connexionButton {
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+}
+
+section > #inscriptionButton {
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: var(--black);
+    background-color: var(--white);
+    text-align: center;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+}

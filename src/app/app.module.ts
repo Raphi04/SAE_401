@@ -11,7 +11,7 @@ import { AccueilComponent } from './component/accueil/accueil.component';
 import { DemarrageComponent } from './component/demarrage/demarrage.component';
 import { ConnexionComponent } from './component/connexion/connexion.component';
 import { InscriptionComponent } from './component/inscription/inscription.component';
-import { MainComponent } from './component/main/main.component';
+import { BoxComponent } from './component/box/box.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { MainComponent } from './component/main/main.component';
     DemarrageComponent,
     ConnexionComponent,
     InscriptionComponent,
-    MainComponent
+    BoxComponent,
   ],
   imports: [
     BrowserModule,
