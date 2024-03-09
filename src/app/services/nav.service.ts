@@ -5,9 +5,15 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class NavService {
-  showNav : BehaviorSubject<boolean>
+  showNav : BehaviorSubject<boolean>;
+  navActive : BehaviorSubject<string>;
   constructor() { 
     this.showNav = new BehaviorSubject(true);
+    this.navActive = new BehaviorSubject("home");
+  }
+
+  changeActive(newActive : any) {
+    this.navActive.next(newActive);
   }
 
   hide() {

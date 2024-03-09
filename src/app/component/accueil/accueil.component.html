@@ -1,7 +1,7 @@
 <section id="accueil">
     <img src="/assets/ressource/greenTopRight2.svg" id="greenTopRight2">
     <img src="/assets/ressource/bamboo2.svg" id="bamboo">
-    <div id="ourMenu">
+    <div id="ourMenu" (click)="changeNavActive('menu')" routerLink="/app-menu" routerLinkActive="active">
         <h2>Nos menus</h2>
     </div>
 
@@ -15,35 +15,19 @@
 
     <h2>Nos recommandations</h2>
     <div id="recommandationsContainer">
-        <div class="recommandation">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div id="stars">
-                    <img src="/assets/ressource/star.svg">
-                    <p>5.0</p>
+
+        <ng-container *ngFor="let recommandation of recommandations" >
+            <div *ngIf="recommandation.fav == 1" class="recommandation" (click)="selectBoxID(recommandation.id);" routerLink="/app-box" routerLinkActive="active">
+                <p>{{recommandation.nom}}</p>
+                <div>
+                    <p>{{recommandation.prix}}€</p>
+                    <div id="stars">
+                        <img src="/assets/ressource/star.svg">
+                        <p>{{recommandation.stars}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="recommandation">
-            <p>Pack 2</p>
-            <div>
-                <p>20.00€</p>
-                <div id="stars">
-                    <img src="/assets/ressource/star.svg">
-                    <p>4.9</p>
-                </div>
-            </div>
-        </div>
-        <div class="recommandation">
-            <p>Pack 5</p>
-            <div>
-                <p>17.00€</p>
-                <div id="stars">
-                    <img src="/assets/ressource/star.svg">
-                    <p>4.8</p>
-                </div>
-            </div>
-        </div>
+        </ng-container>
+        
     </div>
 </section>

@@ -12,6 +12,7 @@
 
 #accueil > #bamboo{
     position: absolute;
+    width: 50%;
     bottom: 0px;
     right: 0px;
     z-index: 1;
@@ -21,7 +22,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 200px;
+    width: 50%;
     z-index: 1;
 }
 
@@ -29,7 +30,7 @@
     position: relative;
     margin-top: 35px;
     width: calc(90% - 40px);
-    height: 150px;
+    height: 20%;
     display: flex;
     padding: 10px 20px;
     background-color: var(--black);
@@ -50,7 +51,7 @@
     justify-content: start;
     margin-top: 20px;
     width: calc(90% - 40px);
-    height: 80px;
+    height: 12%;
     background-color: var(--green);
     border-radius: 10px;
     padding: 10px 20px;
@@ -59,13 +60,13 @@
 #accueil #pointsContainer h2 {
     font-family: Poppins;
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 6%;
 }
 
 #accueil #pointsContainer > div {
     position: relative;
     width: 100%;
-    height: 25px;
+    height: 20%;
     background-color: var(--black);
     border-radius: 30px;
 }
@@ -111,6 +112,7 @@
 
 #accueil #recommandationsContainer {
     width: 100%;
+    height: 25%;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -124,8 +126,8 @@
 
 #accueil #recommandationsContainer .recommandation {
     position: relative;
-    min-width: 200px;
-    height: 170px;
+    min-width: 60%;
+    height: calc(100% - 25px);
     padding: 10px 20px;
     border: 2px solid var(--green);
     background-color: var(--black);

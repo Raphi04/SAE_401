@@ -6,6 +6,7 @@
     --red : #E35052;
     --black : #202020;
     --green : #5D935C;
+    --light-green : #C3D7C3;
     --white : #FFFFFF;
 }
 
@@ -23,4 +24,9 @@ a {
     display: flex;
     outline: none;
     text-decoration: none;
+}
+
+.active {
+    padding: 25px;
+    background-color: red;
 }

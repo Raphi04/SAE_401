@@ -8,6 +8,22 @@
     background-color: var(--black);
 }
 
+#menu > #bamboo{
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#menu > #greenTopRight2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    z-index: 1;
+}
+
 #menu h2 {
     align-self: flex-start;
     font-family: Poppins;
@@ -25,7 +41,8 @@
     overflow-x: scroll;
     padding-bottom: 15px;
     scrollbar-width: thin;
-    scrollbar-color: var(--green) var(--black);
+    scrollbar-color: var(--green) var(--black);    z-index: 1;
+    z-index: 2;
 }
 
 #menu > #filterContainer .filter {
@@ -35,6 +52,7 @@
     font-size: 1.2rem;
     border-radius: 30px;
     font-weight: 500;
+    background-color: var(--black);
 }
 
 #menu > #filterContainer .filter:first-child {
@@ -51,16 +69,18 @@
 
 #menu > #allBoxes {
     margin-top: 25px;
-    width: calc(95% - 20px);
-    height: 65%;
+    width: calc(100% - 20px);
+    height: calc(65% - 40px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     overflow-y: scroll;
-    padding: 0px 10px;
+    padding: 20px 10px;
+    background-color: var(--black);
     scrollbar-width: thin;
     scrollbar-color: var(--green) var(--black);
+    z-index: 2;
 }
 
 #menu > #allBoxes > .box {
@@ -71,6 +91,7 @@
     flex-direction: column;
     justify-content: end;
     border: 1px solid var(--green);
+    background-color: var(--black);
     border-radius: 20px;
 }
 

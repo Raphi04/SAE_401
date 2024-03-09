@@ -1,3 +1,15 @@
 <section id="box">
-    <p>box</p>
+    <img src="/assets/ressource/greenTopRight2.svg" id="greenTopRight2">
+    <img src="/assets/ressource/bamboo2.svg" id="bamboo">
+
+    <ng-container *ngFor="let box of boxInfo">
+        <h2>{{box.nom}}</h2>
+        <p id="price">{{box.prix}} €</p>
+        <img src="/assets/ressource/placeholder.jpg" id="boxImage">
+        <h2>Composants</h2>
+        <ul>
+            <li *ngFor="let aliment of box['aliments']">{{aliment.nom}} x{{aliment.quantite}}</li>
+        </ul>
+    </ng-container>
+    <button id="selection">Sélectionnez</button>
 </section>

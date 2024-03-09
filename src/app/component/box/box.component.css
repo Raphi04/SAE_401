@@ -1,0 +1,65 @@
+#box {
+    position: relative;
+    width: calc(100% - 60px);
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 90px 30px 0px 30px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#box > #bamboo{
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#box > #greenTopRight2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    z-index: 1;
+}
+
+#box h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#box #price {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 600;
+    color: var(--light-green);
+}
+
+#box #boxImage {
+    margin: 15px 0px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 2;
+}
+
+#box ul li {
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+#box #selection {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Poppins;
+    border-radius: 30px;
+    margin-top: 15px;
+}

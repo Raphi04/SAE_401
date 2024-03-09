@@ -10,10 +10,23 @@ import { Subscription } from 'rxjs';
 export class NavComponent implements OnDestroy {
   showNav : boolean = true;
   subscription : Subscription;
+
+  activeNav : string = "home";
+  subscriptionActive : Subscription;
+
   constructor(private navService : NavService) {
-    this.subscription = this.navService.showNav.subscribe((value) => 
-    this.showNav = value
-    );
+    this.subscription = this.navService.showNav.subscribe((value) => {
+      this.showNav = value;
+    });
+
+    this.subscriptionActive = this.navService.navActive.subscribe((value) => {
+      this.activeNav = value;
+    });
+
+  }
+
+  changeActiveNav(value : string) {
+    this.navService.changeActive(value);
   }
 
   ngOnDestroy(): void {

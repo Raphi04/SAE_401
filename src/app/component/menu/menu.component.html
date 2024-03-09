@@ -1,4 +1,6 @@
 <section id="menu">
+    <img src="/assets/ressource/greenTopRight2.svg" id="greenTopRight2">
+    <img src="/assets/ressource/bamboo2.svg" id="bamboo">
     <h2>Nos Menus</h2>
     <div id="filterContainer">
         <div class="filter selected">Tout</div>
@@ -8,84 +10,14 @@
         <div class="filter">Takoyaki</div>
     </div>
     <div id="allBoxes">
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <img src="/assets/ressource/fav.svg" class="fav">
-            <p>Pack 1</p>
+        <div *ngFor="let box of boxes" [ngClass]="box?.saveurs" class="box" (click)="selectBoxID(box.id);" routerLink="/app-box" routerLinkActive="active">
+            <img *ngIf="box.fav == '1'" src="/assets/ressource/fav.svg" class="fav">
+            <p>{{box?.nom}}</p>
             <div>
-                <p>15.00€</p>
+                <p>{{box?.prix}}€</p>
                 <div class="stars">
                     <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="box" routerLink="/app-box" routerLinkActive="active">
-            <p>Pack 1</p>
-            <div>
-                <p>15.00€</p>
-                <div class="stars">
-                    <img src="assets/ressource/star.svg">
-                    <p>5.0</p>
+                    <p>{{box?.stars}}</p>
                 </div>
             </div>
         </div>
