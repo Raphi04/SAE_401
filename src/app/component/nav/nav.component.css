@@ -16,4 +16,11 @@ nav {
 
 nav img {
     width: 35px;
+    filter: grayscale(1);
+}
+
+
+.active {
+    padding: 2px;
+    background-color: red;
 }

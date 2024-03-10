@@ -5,19 +5,27 @@
     
     <h2>Inscrivez-vous</h2>
     <hr>
-    <form>
+    <form [formGroup]="inscriptForm">
         <div>
             <label for="email">E-mail*</label>
-            <input type="email" placeholder="sushi@gmail.com" id="email" autocomplete="on">
+            <input type="email" placeholder="sushi@gmail.com" id="email" autocomplete="on" formControlName="email" [ngClass]="checkError('email')" required email>
+            <span *ngIf="emailErrorMessage" class="errorMessage">{{emailErrorMessage}}</span>
         </div>
         <hr>
         <div>
             <label for="mdp">Mot de passe*</label>
-            <input type="password" placeholder="8 caractères minimum" autocomplete="on">
+            <input type="password" placeholder="8 caractères minimum" autocomplete="on" formControlName="motDePasse" [ngClass]="checkError('motDePasse')" required minlength="8">
+            <span *ngIf="motDePasseErrorMessage" class="errorMessage">{{motDePasseErrorMessage}}</span>
         </div>
         <hr>
+        <div>
+            <label for="cMdp">Confirmation du mot de passe*</label>
+            <input type="password" placeholder="8 caractères minimum" autocomplete="on" formControlName="cMotDePasse" [ngClass]="checkError('cMotDePasse')" required minlength="8">
+            <span *ngIf="cMotDePasseErrorMessage" class="errorMessage">{{cMotDePasseErrorMessage}}</span>
+        </div>
+        <hr>
+        <button id="inscriptionButton" (click)="onSubmit()">Créer mon Compte</button>
     </form>
     
-    <a routerLink="/app-connexion" routerLinkActive="active" id="inscriptionButton">Créer mon Compte</a>
-    <a routerLink="/app-connexion" routerLinkActive="active" id="connexionButton">Me connecter</a>
+    <button routerLink="/app-connexion" routerLinkActive="active" id="connexionButton">Me connecter</button>
 </section>
