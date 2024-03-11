@@ -42,18 +42,6 @@ p{
 h3{
     font-size: 1.6rem;
 }
-body::-webkit-scrollbar {
-    width: 10px;
-}
-body::-webkit-scrollbar-track {
-    background: #27607b;
-}
-body::-webkit-scrollbar-thumb {
-    background: #ceb9b9;
-}
-body::-webkit-scrollbar-thumb:hover {
-    background: #8b1b1b;
-}
 .command-history {
     display: flex;
     flex-direction: row;
@@ -87,14 +75,37 @@ body::-webkit-scrollbar-thumb:hover {
 .remove-button{
     border: 1px solid var(--green);
     background-color: #202020;
+    font-family: Poppins;
 }
 .annuler{
-    border: 1px solid red;
-    background-color: red;
+    border: 1px solid #E35052;
+    background-color: #E35052;
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 .add-button{
     border: 1px solid var(--green);
     background-color: var(--green);
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.add-button:hover {
+    background-color: var(--dark-green); /* Ajoutez la couleur de fond souhaitée lors du survol */
+    color: var(--light-green); /* Ajoutez la couleur de texte souhaitée lors du survol */
+}
+.add-button:active {
+    background-color: var(--darker-green); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
+    color: var(--lighter-green); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+}
+.annuler:hover {
+    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lors du survol */
+    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lors du survol */
+}
+.annuler:active {
+    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
+    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
 }
 #commande{
     margin-left:23px
@@ -112,4 +123,10 @@ body::-webkit-scrollbar-thumb:hover {
 .price{
     display:flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1210px) {
+    .command-history {
+        flex-direction: column;
+    }
 }
