@@ -40,3 +40,8 @@ Vous trouverez ci-joint l'architecture de l'application SUSHI.KO :
 Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, détails
 
 [Maquette](https://www.figma.com/file/YewJCHIxcp26KI8tOVMFAp/Untitled?type=design&node-id=0%3A1&mode=design&t=4KNuZF73xHuQtkNl-1)
+
+## LIVRABLE L401_4
+Vous trouverez ci-joint le suivi des mises à jours de la partie FRONT du code :
+
+![FRONT](images/FRONT)
