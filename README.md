@@ -44,4 +44,4 @@ Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, dé
 ## LIVRABLE L401_4
 Vous trouverez ci-joint le suivi des mises à jours de la partie FRONT du code :
 
-![FRONT](images/FRONT)
+![FRONT](images/FRONT.png)
