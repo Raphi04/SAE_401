@@ -1,22 +1,10 @@
 # SAE401
+# LIVRABLE  L401_3
+Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, détails.
+![Page d'accueil](chemin/vers/l'image.png)
+Pour en voir plus, cliquez-ici :
+https://www.figma.com/file/YewJCHIxcp26KI8tOVMFAp/Untitled?type=design&node-id=0%3A1&mode=design&t=4KNuZF73xHuQtkNl-1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
