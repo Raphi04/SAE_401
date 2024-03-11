@@ -23,6 +23,18 @@ Notre application porte le nom de Sushi.ko et a pour logo :
 
 ![Version clair](images/logo_blanc.png)
 
+### Analyse des besoins de l'application
+![USER CASE](images/User_Case_SUSHI.png)
+
+### Diagramme d'activités
+(en cours par Hugo)
+
+### Diagramme des classes
+(en cours par Raphi)
+
+### Diagramme d'architecture
+(en cours par Inès)
+
 ## LIVRABLE  L401_3
 Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, détails
 
