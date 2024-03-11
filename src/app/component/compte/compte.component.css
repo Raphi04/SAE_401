@@ -1,0 +1,67 @@
+body{
+    background-color: var(--black);
+    height: 100vh; 
+}
+#ListCommande {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding-top: 60px;
+    color: white;
+    background-color: var(--black);
+}
+#ListCommande #commande {
+    position: relative;
+    margin-top: 35px;
+    width: calc(90% - 40px);
+    height: 20%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+#ListCommande #commande h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+#ListCommande > h2 {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    margin: 25px 0px 15px 10%;
+    align-self: flex-start;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #27607b;
+}
+body::-webkit-scrollbar-thumb {
+    background: #ceb9b9;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #8b1b1b;
+}
+.command-history {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre chaque élément de commande */
+}
+
+.command-details {
+    flex: 1; /* Prend le reste de l'espace disponible */
+}
+
+.command-details h3 {
+    margin: 0;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons button {
+    margin-right: 10px;
+}
+
+
