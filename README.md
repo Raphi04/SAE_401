@@ -30,7 +30,7 @@ Notre application porte le nom de Sushi.ko et a pour logo :
 (en cours par Hugo)
 
 ### Diagramme des classes
-(en cours par Raphi)
+![Diagramme de classes](images/Diagramme_de_classe.jpg)
 
 ### Architecture de l'application
 Vous trouverez ci-joint l'architecture de l'application SUSHI.KO :
