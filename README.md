@@ -30,7 +30,7 @@ Notre application porte le nom de Sushi.ko et a pour logo :
 (en cours par Hugo)
 
 ### Diagramme des classes
-(en cours par Raphi)
+![Diagramme de classes](images/Diagramme_de_classe.jpg)
 
 ### Architecture de l'application
 Vous trouverez ci-joint l'architecture de l'application SUSHI.KO :
@@ -43,5 +43,7 @@ Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, dé
 
 ## LIVRABLE L401_4
 Vous trouverez ci-joint le suivi des mises à jours de la partie FRONT du code :
+![FRONT](images/FRONT.png)
 
-![FRONT](images/FRONT)
+https://github.com/Raphi04/SAE_401/commits/master/
+
