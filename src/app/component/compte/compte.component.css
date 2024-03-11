@@ -1,6 +1,6 @@
 body{
     background-color: var(--black);
-    height: 100vh; 
+    height:100%;
 }
 #ListCommande {
     position: relative;
@@ -12,8 +12,7 @@ body{
 }
 #ListCommande #commande {
     position: relative;
-    margin-top: 35px;
-    width: calc(90% - 40px);
+    margin: 35px;
     height: 20%;
     padding: 10px 20px;
     border-radius: 10px;
@@ -26,9 +25,22 @@ body{
 }
 #ListCommande > h2 {
     font-family: Poppins;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 25px 0px 15px 10%;
     align-self: flex-start;
+}
+h1 {
+    font-family: Poppins;
+    font-size: 2.3rem;
+    align-self: flex-start;
+}
+p{
+    font-family: Poppins;
+    text-align: justify;
+    margin-right: 2em;
+}
+h3{
+    font-size: 1.6rem;
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -44,12 +56,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .command-history {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px; /* Espacement entre chaque élément de commande */
 }
 
 .command-details {
-    flex: 1; /* Prend le reste de l'espace disponible */
+    flex: 1;
+    border-bottom: 1px solid #5d935c; /* Prend le reste de l'espace disponible */
 }
 
 .command-details h3 {
@@ -58,10 +71,45 @@ body::-webkit-scrollbar-thumb:hover {
 
 .buttons {
     margin-top: 10px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
 }
 
 .buttons button {
     margin-right: 10px;
+    color: var(--white);
+    padding: 5px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    font-weight: 500;
 }
-
-
+.remove-button{
+    border: 1px solid var(--green);
+    background-color: #202020;
+}
+.annuler{
+    border: 1px solid red;
+    background-color: red;
+}
+.add-button{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+}
+#commande{
+    margin-left:23px
+}
+.separator {
+    width: 1px;
+    background-color: white;
+}
+.history1{
+    width: 100%;
+}
+.history2{
+    width: 100%;
+}
+.price{
+    display:flex;
+    justify-content: space-between;
+}
