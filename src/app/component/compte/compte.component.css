@@ -128,19 +128,13 @@ h3{
 }
 @media screen and (max-width: 1210px) {
     .command-history {
-        flex-direction: column;
-    }
-    .buttons {
-        margin-top: 10px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
     }
     .buttons button {
         margin-right: 10px;
         color: var(--white);
         padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
-        font-size: 0.5rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        font-size: 0.9rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
         border-radius: 30px;
         font-weight: 500;
     }
@@ -149,3 +143,38 @@ h3{
         font-size: 1.0rem;
     }
 }
+@media screen and (max-width: 1190px) {
+    .command-history {
+        flex-direction: column;
+    }
+    .buttons button {
+        margin-right: 10px;
+        color: var(--white);
+        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
+        font-size: 0.8rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        border-radius: 30px;
+        font-weight: 500;
+    }
+    p{
+        margin-right: 2em;
+        font-size: 1.0rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .command-history {
+        flex-direction: column;
+    }
+    .buttons button {
+        margin-right: 10px;
+        color: var(--white);
+        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
+        font-size: 0.6rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        border-radius: 30px;
+        font-weight: 500;
+    }
+    p{
+        margin-right: 2em;
+        font-size: 1.0rem;
+    }
+}
+
