@@ -66,3 +66,10 @@
     background-color: var(--white);
     color: var(--green);
 }
+#demarrage #buttonContainer #non_inscrit {
+    color:var(--green);
+    font-size: 24px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    border-color: var(--green);
+}
