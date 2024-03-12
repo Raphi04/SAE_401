@@ -48,7 +48,7 @@
 #accueil #pointsContainer {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    text-align: center;
     margin-top: 20px;
     width: calc(90% - 40px);
     height: 12%;
@@ -57,11 +57,12 @@
     padding: 10px 20px;
 }
 
-#accueil #pointsContainer h2 {
-    font-family: Poppins;
-    font-size: 1.3rem;
-    margin-bottom: 6%;
-}
+#pointsContainer > h3 {
+    font-family: Gastroe;
+    font-size: 36px;
+    font-weight: normal;
+} 
+
 
 #accueil #pointsContainer > div {
     position: relative;
