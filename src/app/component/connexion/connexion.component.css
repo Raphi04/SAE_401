@@ -46,12 +46,14 @@ section > hr {
 section > form {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    align-items: center;
+    width: 100%;
 }
 
 section > form > div {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 section > form > div > label {
@@ -74,9 +76,10 @@ section > form > div > input {
 
 section > form > hr {
     margin: 7px 0px;
+    width: 100%;
 }
 
-section > #connexionButton {
+section > form > #connexionButton {
     width: 100%;
     display: block;
     padding: 10px 0px;
@@ -99,4 +102,14 @@ section > #inscriptionButton {
     text-align: center;
     border: 1px solid var(--white);
     border-radius: 4px;
+}
+
+.errorInput {
+    border: 1px solid rgb(219, 0, 0) !important;
+}
+
+.errorMessage {
+    color: rgb(219, 0, 0) !important;
+    font-family: Poppins;
+    font-size: 0.8rem;
 }

@@ -22,5 +22,5 @@ nav img {
 
 .active {
     padding: 2px;
-    background-color: red;
+    background-color: red !important;
 }

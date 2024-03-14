@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavService } from '../../services/nav.service';
 import { Subscription } from 'rxjs';
 
@@ -22,7 +22,6 @@ export class NavComponent implements OnDestroy {
     this.subscriptionActive = this.navService.navActive.subscribe((value) => {
       this.activeNav = value;
     });
-
   }
 
   changeActiveNav(value : string) {
@@ -31,5 +30,6 @@ export class NavComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+    this.navService.changeActive("");
   }
 }

@@ -76,8 +76,6 @@ if(!isset($_GET["id"])) {
             array_push($boxArr, $e);        //On ajoute le tableau au tableau général
         }
         echo json_encode($boxArr);          //On renvoie le fichier JSON avec les informations
-    }else{
-        http_response_code(404);
-        echo json_encode(["message" => "Erreur dans le traitement."]);
-    }}
+    }
+}
 

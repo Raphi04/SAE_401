@@ -5,19 +5,22 @@
     
     <h2>Connectez-vous</h2>
     <hr>
-    <form>
+    <form [formGroup]="connexionForm">
         <div>
             <label for="email">E-mail*</label>
-            <input type="email" placeholder="sushi@gmail.com" id="email" autocomplete="on">
+            <input type="email" placeholder="sushi@gmail.com" id="email" autocomplete="on" formControlName="email" [ngClass]="checkError('email')" required email>
+            <span *ngIf="emailErrorMessage" class="errorMessage">{{emailErrorMessage}}</span>
+            <span *ngIf="identifiantErrorMessage" class="errorMessage">{{identifiantErrorMessage}}</span>
         </div>
         <hr>
         <div>
             <label for="mdp">Mot de passe*</label>
-            <input type="password" placeholder="8 caractères minimum" autocomplete="on">
+            <input type="password" placeholder="8 caractères minimum" autocomplete="on" formControlName="mdp" [ngClass]="checkError('mdp')" required minlength="8">
+            <span *ngIf="identifiantErrorMessage" class="errorMessage">{{identifiantErrorMessage}}</span>
         </div>
         <hr>
+        <button (click)="onSubmit()" id="connexionButton">Me connecter</button>
     </form>
     
-    <a routerLink="/app-accueil" routerLinkActive="active" id="connexionButton">Me connecter</a>
     <a routerLink="/app-inscription" routerLinkActive="active" id="inscriptionButton">Créer mon Compte</a>
 </section>

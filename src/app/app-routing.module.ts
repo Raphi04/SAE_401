@@ -14,13 +14,14 @@ const routes: Routes = [
   { path: "app-header", component: HeaderComponent },
   { path: "app-nav", component: NavComponent },
   { path: "app-menu", component: MenuComponent },
+  { path: "app-box", component: BoxComponent},
   { path: "app-compte", component: CompteComponent },
   { path: "app-accueil", component: AccueilComponent },
   { path: "app-demarrage", component: DemarrageComponent },
   { path: "app-connexion", component: ConnexionComponent },
   { path: "app-inscription", component: InscriptionComponent },
-  { path: "app-box", component: BoxComponent},
-  { path: "**", redirectTo: "app-demarrage" }
+  { path: "", redirectTo: "app-demarrage", pathMatch: 'full'},
+  { path: "**", redirectTo: "app-connexion" }
 ];
 
 @NgModule({

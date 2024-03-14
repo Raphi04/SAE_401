@@ -1,5 +1,5 @@
 <nav *ngIf="showNav">
-    <a [ngClass]="{'active': activeNav == 'home'}" (click)="changeActiveNav('home')" routerLink="/app-accueil" routerLinkActive="active"><img src="/assets/ressource/home.svg"></a>
-    <a [ngClass]="{'active': activeNav == 'menu'}" (click)="changeActiveNav('menu')" routerLink="/app-menu" routerLinkActive="active"><img src="/assets/ressource/menu.svg"></a>
-    <a [ngClass]="{'active': activeNav == 'compte'}" (click)="changeActiveNav('compte')" routerLink="/app-compte" routerLinkActive="active"><img src="/assets/ressource/compte.svg"></a>
+    <a [ngClass]="{'active': activeNav == 'home'}" (click)="changeActiveNav('home')" routerLink="/app-accueil"><img src="/assets/ressource/home.svg"></a>
+    <a [ngClass]="{'active': activeNav == 'menu'}" (click)="changeActiveNav('menu')" routerLink="/app-menu"><img src="/assets/ressource/menu.svg"></a>
+    <a [ngClass]="{'active': activeNav == 'compte'}" (click)="changeActiveNav('compte')" routerLink="/app-compte"><img src="/assets/ressource/compte.svg"></a>
 </nav>

@@ -10,7 +10,7 @@
         <div class="filter">Takoyaki</div>
     </div>
     <div id="allBoxes">
-        <div *ngFor="let box of boxes" [ngClass]="box?.saveurs" class="box" (click)="selectBoxID(box.id);" routerLink="/app-box" routerLinkActive="active">
+        <div *ngFor="let box of boxes" [ngClass]="box?.saveurs" class="box" (click)="selectBoxID(box.id);">
             <img *ngIf="box.fav == '1'" src="/assets/ressource/fav.svg" class="fav">
             <p>{{box?.nom}}</p>
             <div>

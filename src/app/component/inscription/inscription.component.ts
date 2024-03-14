@@ -17,14 +17,14 @@ export class InscriptionComponent implements OnInit, OnDestroy{
     email: ["", [Validators.required, Validators.email]],
     motDePasse : ["", [Validators.required, Validators.minLength(8)]],
     cMotDePasse : ["", [Validators.required, Validators.minLength(8)]]
-  })
+  });
 
   //Flag pour la première fois que le formulaire apparait
   isSubmited = false;
+  errorForm = true;
   emailErrorMessage = "";
   motDePasseErrorMessage = "";
   cMotDePasseErrorMessage = "";
-  errorForm = true;
 
   onSubmit() {
     this.isSubmited = true;
@@ -48,6 +48,17 @@ export class InscriptionComponent implements OnInit, OnDestroy{
           allUsers.push(newUser);
           localStorage.setItem("allUsers", JSON.stringify(allUsers));
 
+           //Création/Changement du currentUser
+           let currentUser = localStorage.getItem("currentUser") || "";
+           if (currentUser !== "") {
+             currentUser = this.inscriptForm.get("email")?.value || "";
+             console.log(currentUser);
+             localStorage.setItem("currentUser", currentUser);
+           } else {
+             currentUser = this.inscriptForm.get("email")?.value || "";
+             localStorage.setItem("currentUser", currentUser);
+           }
+
           //Redirection
           this.router.navigate(["/app-connexion"]);
 
@@ -65,6 +76,16 @@ export class InscriptionComponent implements OnInit, OnDestroy{
           //Ajout de l'utilisateur
           allUsers.push(newUser);
           localStorage.setItem("allUsers", JSON.stringify(allUsers));
+
+          //Création/Changement du currentUser
+          let currentUser = localStorage.getItem("currentUser" || "");
+          if (currentUser !== "") {
+            currentUser = this.inscriptForm.get("email")?.value || "";
+            localStorage.setItem("currentUser", currentUser);
+          } else {
+            currentUser = this.inscriptForm.get("email")?.value || "";
+            localStorage.setItem("currentUser", currentUser);
+          }
 
           //Redirection
           this.router.navigate(["/app-connexion"]);
