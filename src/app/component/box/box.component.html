@@ -11,5 +11,11 @@
             <li *ngFor="let aliment of box['aliments']">{{aliment.nom}} x{{aliment.quantite}}</li>
         </ul>
     </ng-container>
-    <button id="selection">Sélectionnez</button>
+    <form [formGroup]="addItemForm">
+        <input type="number" formControlName="itemNumber" max="{{maxLength}}" min="{{minLength}}">
+        <p *ngIf="maxLength == 0" class="errorMessage">Vous ne pouvez pas commander plus de dix box en même temps</p>
+        <button type="submit" id="selection" (click)="onSubmit()" [disabled]="maxLength == 0">Ajouter</button>
+        <button (click)="add()">+</button>
+        <button (click)="minus()">-</button>
+    </form>
 </section>

@@ -14,6 +14,7 @@ import { DemarrageComponent } from './component/demarrage/demarrage.component';
 import { ConnexionComponent } from './component/connexion/connexion.component';
 import { InscriptionComponent } from './component/inscription/inscription.component';
 import { BoxComponent } from './component/box/box.component';
+import { BagComponent } from './component/bag/bag.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BoxComponent } from './component/box/box.component';
     ConnexionComponent,
     InscriptionComponent,
     BoxComponent,
+    BagComponent,
   ],
   imports: [
     BrowserModule,

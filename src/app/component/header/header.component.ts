@@ -1,6 +1,8 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { HeaderService } from '../../services/header.service';
+import { BoxService } from '../../services/box.service';
+import { BagService } from '../../services/bag.service';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +10,25 @@ import { HeaderService } from '../../services/header.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnDestroy{
+
   showHeader : boolean = true;
   subscription : Subscription;
-  constructor(private headerService : HeaderService) {
-    this.subscription = this.headerService.showHeader.subscribe((value) =>
-    this.showHeader = value
-    )}
 
-    ngOnDestroy(): void {
-      this.subscription.unsubscribe;
-    }
+  itemNumber : any;
+  boxNumberSubscription : Subscription;
+
+  constructor(private headerService : HeaderService, private bag : BagService) {
+    this.subscription = this.headerService.showHeader.subscribe((value) => {
+    this.showHeader = value
+    })
+    
+    this.boxNumberSubscription = this.bag.bagItemNumber.subscribe((value) => {
+      this.itemNumber = value;
+    })
+
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe;
+  }
 }

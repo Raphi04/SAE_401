@@ -9,6 +9,7 @@ import { DemarrageComponent } from './component/demarrage/demarrage.component';
 import { ConnexionComponent } from './component/connexion/connexion.component';
 import { InscriptionComponent } from './component/inscription/inscription.component';
 import { BoxComponent } from './component/box/box.component';
+import { BagComponent } from './component/bag/bag.component';
 
 const routes: Routes = [
   { path: "app-header", component: HeaderComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: "app-demarrage", component: DemarrageComponent },
   { path: "app-connexion", component: ConnexionComponent },
   { path: "app-inscription", component: InscriptionComponent },
+  { path: "app-bag", component: BagComponent },
   { path: "", redirectTo: "app-demarrage", pathMatch: 'full'},
   { path: "**", redirectTo: "app-connexion" }
 ];
