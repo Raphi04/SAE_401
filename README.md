@@ -27,7 +27,7 @@ Notre application porte le nom de Sushi.ko et a pour logo :
 ![USER CASE](images/User_Case_SUSHI.png)
 
 ### Diagramme d'activités
-(en cours par Hugo)
+![Diagramme d'activité](images/Diagramme_activite.png)
 
 ### Diagramme des classes
 ![Diagramme de classes](images/Diagramme_de_classe.jpg)
