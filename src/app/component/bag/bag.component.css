@@ -1,0 +1,188 @@
+body{
+    background-color: var(--black);
+    height:100em;
+}
+#ListCommande {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding-top: 60px;
+    color: white;
+    background-color: var(--black);
+    overflow-y:scroll;
+}
+#ListCommande #commande {
+    position: relative;
+    margin: 35px;
+    height: 20%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+#ListCommande #commande h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+#ListCommande > h2 {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    margin: 25px 0px 15px 10%;
+    align-self: flex-start;
+}
+h1 {
+    font-family: Poppins;
+    font-size: 2.3rem;
+    align-self: flex-start;
+}
+p{
+    font-family: Poppins;
+    text-align: justify;
+    margin-right: 2em;
+    font-size: 1.0rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+.command-history {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.command-details {
+    flex: 1;
+    border-bottom: 1px solid #5d935c; /* Prend le reste de l'espace disponible */
+}
+
+.command-details h3 {
+    margin: 0;
+}
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.remove-button{
+    border: 1px solid var(--green);
+    background-color: #202020;
+    font-family: Poppins;
+    cursor: pointer;
+}
+.annuler{
+    border: 1px solid #E35052;
+    background-color: #E35052;
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.add-button{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.commander{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.5em;
+}
+.buttons .commander {
+    margin-right: 10px;
+    color: var(--white);
+    padding: 5px 2.5em;
+    font-size: auto;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.commander:hover {
+    background-color: var(--dark-green); /* Ajoutez la couleur de fond souhaitée lors du survol */
+    color: var(--light-green); /* Ajoutez la couleur de texte souhaitée lors du survol */
+}
+.commander:active {
+    background-color: var(--darker-green); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
+    color: var(--lighter-green); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+}
+.add-button:hover {
+    background-color: var(--dark-green); /* Ajoutez la couleur de fond souhaitée lors du survol */
+    color: var(--light-green); /* Ajoutez la couleur de texte souhaitée lors du survol */
+}
+.add-button:active {
+    background-color: var(--darker-green); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
+    color: var(--lighter-green); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+}
+.annuler:hover {
+    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lors du survol */
+    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lors du survol */
+}
+.annuler:active {
+    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
+    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+}
+#commande{
+    margin-left:23px
+}
+.separator {
+    width: 1px;
+    background-color: white;
+}
+.history1{
+    width: 100%;
+}
+.history2{
+    width: 100%;
+}
+.price{
+    display:flex;
+    justify-content: space-between;
+}
+#prixT{
+    color: var(--green);
+    font-family: Poppins;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+#quantite{
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 1.0rem;
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    font-family: Poppins;
+    transition: background-color 0.3s, color 0.3s;
+    width: 3em;
+    margin-top: 0.5em;
+}
+.buttons button {
+    margin-right: 10px;
+    color: var(--white);
+    padding: 5px 2.5em;
+    font-size: auto;
+    border-radius: 30px;
+    font-weight: 500;
+}
+@media screen and (max-width: 1200px) {
+    .command-history {
+        flex-direction: column;
+    }
+    .buttons button {
+        margin-right: 10px;
+        color: var(--white);
+        padding: 5px 25px;
+        font-size: 0.7rem;
+        border-radius: 30px;
+        font-weight: 500;
+    }
+    p{
+        font-family: Poppins;
+        text-align: justify;
+        margin-right: 2em;
+    }
+}
+
+
