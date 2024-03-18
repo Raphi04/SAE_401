@@ -1,7 +1,12 @@
 <section id="ListCommande">
 <div id="commande" routerLink="/app-compte" routerLinkActive="active">
-    <h1>Mon Profil</h1>
-    <h2>Historique des commandes</h2>
+    <div style="display: flex; align-items: center;justify-content: space-between;">
+        <div>
+            <h1>Mon Profil</h1>
+            <h2>Historique des commandes</h2>
+        </div>
+        <img (click)="disconnectUser()" style="width:auto;height:2em;cursor:pointer" alt="icon de deconnexion"src="../../../assets/ressource/icon_deconnexion.png">
+    </div>
     <br>
 <div class="command-history">
     <div class="history1">
@@ -101,7 +106,7 @@
         <div class="buttons">
             <div>
                 <button class="add-button">Détails</button>
-                <button class="remove-button" (click)="disconnectUser()">En cours de livraison</button>
+                <button class="remove-button">En cours de livraison</button>
             </div>
             <button class="annuler">Annuler</button>
         </div>
