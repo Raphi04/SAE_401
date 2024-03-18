@@ -47,3 +47,39 @@ Vous trouverez ci-joint le suivi des mises à jours de la partie FRONT du code :
 
 https://github.com/Raphi04/SAE_401/commits/master/
 
+## LIVRABLE  L401_5
+Vous retrouverez dans ce document le compte rendue des tests unitaires, la page pour la prise en compte des droits RGPD ainsi que les deux scénarios malveillants et les mesures pour les contrecarrer.
+
+### Compte-Rendue des tests-unitaires
+
+### Prise en compte des droits RGPD
+Dernière mise à jour : 18/03/24
+
+#### Introduction
+Bienvenue sur Sushiko.com. Nous accordons une grande importance à la protection de vos informations personnelles et nous nous engageons à respecter votre vie privée conformément au Règlement Général sur la Protection des Données (RGPD) de l'Union européenne.
+
+Cette politique de confidentialité vous informe sur la manière dont nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez notre site Internet.
+
+En utilisant notre site, vous consentez à la collecte et à l'utilisation de vos données personnelles telles que décrites dans cette politique.
+
+#### Collecte des informations
+Nous collectons certaines informations personnelles lorsque vous utilisez notre site, notamment lorsque vous vous connectez à votre compte et que vous utilisez notre fonction de panier. Les informations collectées peuvent inclure votre adresse e-mail, votre mot de passe, votre historique de commande et les articles ajoutés à votre panier. Ces informations sont stockées localement sur votre appareil à l'aide de la technologie LocalStorage de votre navigateur, et ne sont pas transmises à nos serveurs.
+
+#### Utilisation des informations
+Les informations collectées via la fonction de connexion et de panier sont utilisées uniquement dans le cadre de votre expérience sur notre site. Elles ne sont pas partagées avec des tiers et ne sont pas utilisées à des fins de marketing.
+
+#### Protection des informations
+Nous mettons en place des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos informations personnelles stockées localement sur votre appareil contre tout accès non autorisé, divulgation, altération ou destruction.
+
+#### Vos droits
+Vous avez certains droits sur vos données personnelles, y compris le droit d'accéder, de rectifier, de limiter ou de supprimer vos informations stockées localement sur votre appareil. Vous pouvez gérer ces informations en ajustant les paramètres de votre navigateur ou en supprimant les données stockées.
+
+#### Modifications de la politique de confidentialité
+Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec la date de mise à jour.
+
+#### Contactez-nous
+Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à l'adresse TEMMAR.Ines77@gmail.com.
+
+### Deux scénarios malveillants et les mesures pour le contrecarrer
+
+
