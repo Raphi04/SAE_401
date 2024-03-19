@@ -6,8 +6,11 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class HeaderService {
   showHeader : BehaviorSubject<boolean>;
+  activeBag : BehaviorSubject<boolean>;
+
   constructor() { 
     this.showHeader = new BehaviorSubject(true);
+    this.activeBag = new BehaviorSubject(false);
   }
 
   hide() {
@@ -16,5 +19,9 @@ export class HeaderService {
 
   display() {
     this.showHeader.next(true);
+  }
+
+  greenBag() {
+    this.activeBag.next(true);    
   }
 }

@@ -13,7 +13,7 @@
     <div id="recommandationsContainer">
 
         <ng-container *ngFor="let recommandation of recommandations" >
-            <div *ngIf="recommandation.fav == 1" class="recommandation" (click)="selectBoxID(recommandation.id);" routerLink="/app-box" routerLinkActive="active">
+            <div *ngIf="recommandation.fav == 1" class="recommandation" (click)="selectBoxID(recommandation.id);" routerLink="/app-box" routerLinkActive="active" style="background-image: url('/assets/ressource/box/{{recommandation.image}}.png');">
                 <p>{{recommandation.nom}}</p>
                 <div>
                     <p>{{recommandation.prix}}€</p>

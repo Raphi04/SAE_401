@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { NavService } from '../../services/nav.service';
+import { HeaderService } from '../../services/header.service';
 
 @Component({
   selector: 'app-bag',
@@ -11,7 +12,7 @@ import { NavService } from '../../services/nav.service';
 export class BagComponent implements OnInit{
   allBox_DB = [];
   bagBoxes = [];
-  constructor(private http : HttpClient, private router : Router, private nav : NavService) {}
+  constructor(private http : HttpClient, private router : Router, private nav : NavService, private header : HeaderService) {}
 
   ngOnInit(): void {
     let currentUser = localStorage.getItem("currentUser") || "";
@@ -19,6 +20,7 @@ export class BagComponent implements OnInit{
       this.router.navigate([`/app-connexion`]);
     }
     this.nav.changeActive("bag");
+    this.header.greenBag();
 
     //Récupération des informations nécessaires
     this.loadBoxDB();

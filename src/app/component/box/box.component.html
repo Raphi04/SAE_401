@@ -5,7 +5,7 @@
     <ng-container *ngFor="let box of boxInfo">
         <h2>{{box.nom}}</h2>
         <p id="price">{{box.prix}} €</p>
-        <img src="/assets/ressource/placeholder.jpg" id="boxImage">
+        <img src="/assets/ressource/box/{{box.image}}.png" id="boxImage">
         <h2>Composants</h2>
         <ul>
             <li *ngFor="let aliment of box['aliments']">{{aliment.nom}} x{{aliment.quantite}}</li>

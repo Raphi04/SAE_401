@@ -1,7 +1,7 @@
 <header *ngIf="showHeader">
-    <img src="/assets/ressource/sushiKoWhite.svg" id="appTitle">
+    <img src="/assets/ressource/SushiCoBlack.svg" id="appTitle">
     <div routerLink="/app-bag">
-        <img src="/assets/ressource/Bag.svg" id="bag">
+        <img src="/assets/ressource/Bag.svg" id="bag" [ngClass]="{'activeBag' : isActive}">
         <div id="bagTotalCount">{{itemNumber}}</div>
     </div>
 </header>

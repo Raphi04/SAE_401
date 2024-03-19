@@ -17,6 +17,9 @@ export class HeaderComponent implements OnDestroy{
   itemNumber : any;
   boxNumberSubscription : Subscription;
 
+  isActive : boolean = false;
+  bagSubscription : Subscription;
+
   constructor(private headerService : HeaderService, private bag : BagService) {
     this.subscription = this.headerService.showHeader.subscribe((value) => {
     this.showHeader = value
@@ -26,9 +29,14 @@ export class HeaderComponent implements OnDestroy{
       this.itemNumber = value;
     })
 
+    this.bagSubscription = this.headerService.activeBag.subscribe((value) => {
+      this.isActive = value;
+    })
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe;
+    this.subscription.unsubscribe();
+    this.boxNumberSubscription.unsubscribe();
+    this.bagSubscription.unsubscribe();
   }
 }
