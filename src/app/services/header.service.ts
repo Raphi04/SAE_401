@@ -21,7 +21,7 @@ export class HeaderService {
     this.showHeader.next(true);
   }
 
-  greenBag() {
-    this.activeBag.next(true);    
+  greenBag(boolean : boolean) {
+    this.activeBag.next(boolean);    
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { NavService } from '../../services/nav.service';
@@ -9,7 +9,7 @@ import { HeaderService } from '../../services/header.service';
   templateUrl: './bag.component.html',
   styleUrl: './bag.component.css'
 })
-export class BagComponent implements OnInit{
+export class BagComponent implements OnInit, OnDestroy{
   allBox_DB = [];
   bagBoxes = [];
   constructor(private http : HttpClient, private router : Router, private nav : NavService, private header : HeaderService) {}
@@ -20,7 +20,7 @@ export class BagComponent implements OnInit{
       this.router.navigate([`/app-connexion`]);
     }
     this.nav.changeActive("bag");
-    this.header.greenBag();
+    this.header.greenBag(true);
 
     //Récupération des informations nécessaires
     this.loadBoxDB();
@@ -33,7 +33,10 @@ export class BagComponent implements OnInit{
         boxes_Local = allUsers[i].bagContent;
       }
     }
+  }
 
+  ngOnDestroy(): void {
+    this.header.greenBag(false);
   }
 
   loadBoxDB() {

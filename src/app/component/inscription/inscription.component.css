@@ -2,7 +2,8 @@ section {
     position: relative;
     height: calc(100% - 130px);
     width: calc(100% - 100px);
-    background-color: var(--black);
+    background-color: var(--white);
+    color: var(--black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +33,7 @@ section > #greenBottomLeft {
 
 section > h2 {
     margin-top: 75px;
-    color: var(--white);
+    color: var(--black);
     font-weight: 500;
     z-index: 10;
 }
@@ -57,7 +58,7 @@ section > form > div {
 }
 
 section > form > div > label {
-    color: var(--white);
+    color: var(--black);
     font-size: 1rem;
     font-family: Poppins;
     font-weight: 500;
@@ -70,7 +71,7 @@ section > form > div > input {
     font-family: Poppins;
     font-weight: 200;
     font-size: 0.9rem;
-    color: white;
+    color: black;
     background-color: transparent;
 }
 
@@ -85,10 +86,10 @@ section > #connexionButton {
     padding: 10px 0px;
     margin-top: 15px;
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
-    background-color: var(--black);
-    border: 1px solid var(--white);
+    background-color: var(--white);
+    border: 1px solid var(--green);
     border-radius: 4px;
 }
 
@@ -98,10 +99,10 @@ section > form > #inscriptionButton {
     padding: 10px 0px;
     margin-top: 25px;
     font-size: 1.5rem;
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--green);
     text-align: center;
-    border: 1px solid var(--white);
+    border: 1px solid var(--green);
     border-radius: 4px;
 }
 

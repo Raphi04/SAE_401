@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: calc(100% - 60px);
-    padding-top: 60px;
     color: var(--black);
     background-color: var(--white);
 }
@@ -56,6 +56,8 @@
 #accueil #pointsContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 20px;
     width: calc(90% - 40px);

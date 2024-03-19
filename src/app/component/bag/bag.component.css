@@ -8,7 +8,8 @@ body{
     height: calc(100% - 60px);
     padding-top: 60px;
     color: white;
-    background-color: var(--black);
+    background-color: var(--white);
+    color: var(--black);
     overflow-y:scroll;
 }
 #ListCommande #commande {
