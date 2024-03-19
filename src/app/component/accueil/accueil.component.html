@@ -27,3 +27,33 @@
         
     </div>
 </section>
+
+<!-- Version PC -->
+
+<!-- <section id="accueil">
+    <div id="ourMenu" (click)="changeNavActive('menu')" routerLink="/app-menu" routerLinkActive="active">
+        <h2>Nos menus</h2>
+        <div id="pointsContainer">
+            <h3>Découvrez nos Spécialités</h3>
+        </div>
+    </div>
+    <div id="recommandation">
+        <h2>NOS RECOMMANDATIONS</h2>
+    </div>
+    <div id="recommandationsContainer">
+
+        <ng-container *ngFor="let recommandation of recommandations" >
+            <div *ngIf="recommandation.fav == 1" class="recommandation" (click)="selectBoxID(recommandation.id);" routerLink="/app-box" routerLinkActive="active" style="background-image: url('/assets/ressource/box/{{recommandation.image}}.png');">
+                <p>{{recommandation.nom}}</p>
+                <div>
+                    <p>{{recommandation.prix}}€</p>
+                    <div id="stars">
+                        <img src="/assets/ressource/star.svg">
+                        <p>{{recommandation.stars}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        
+    </div>
+</section> -->

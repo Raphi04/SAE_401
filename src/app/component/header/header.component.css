@@ -3,7 +3,7 @@
     top: 0px;
     left: 0px;
     width: calc(100% - 60px);
-    height: 60px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@
     top: 0px;
     left: 0px;
     width: calc(100% - 60px);
-    height: 60px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,4 +111,12 @@
 
 .activeBag {
     filter: grayscale(0) !important;
+}
+@media screen and (min-width: 768px){
+    #header1 {
+        height: 50px;
+    }
+    #header2 {
+        height: 50px;
+    }
 }

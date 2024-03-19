@@ -70,7 +70,7 @@
 
 #pointsContainer > h3 {
     font-family: Gastroe;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: normal;
 } 
 
@@ -117,7 +117,8 @@
 
 #accueil > h2 {
     font-family: Poppins;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin: 25px 0px 15px 10%;
     align-self: flex-start;
 }
@@ -197,3 +198,116 @@
     padding-left: 0;
     padding-right: 10px;
 }
+@media screen and (min-width: 425px)
+{
+    #accueil #ourMenu {
+        margin-top: 12%;
+        margin-bottom: 5%;
+        width: 90%;
+        height: 23%;
+    }
+    #accueil #pointsContainer{
+        margin-top: 0%;
+        height: 12%;
+    }
+    #accueil #pointsContainer>h3{
+        font-size: 27px;
+    }
+    #accueil > h2 {
+        margin: 3% 0px 3% 10%;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #accueil #ourMenu {
+        margin-top: 4%;
+        margin-bottom: 2%;
+        width: 650px;
+        height: 28%;
+        background-size: contain;
+    }
+
+    #accueil #pointsContainer{
+        width: 650px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 0%;
+        z-index: 5;
+        height: 45px;
+    }
+
+    #accueil #pointsContainer>h3{
+        font-size: 30px;
+    }
+
+    #accueil > #bamboo{
+        width: 20%;
+    }
+
+    #accueil > #greenTopRight2 {
+        width: 22%;
+    }
+
+    #accueil #ourMenu h2 {
+        font-size: 1.3rem;
+    }
+
+    #accueil > h2 {
+        font-size: 1.3rem;
+        margin: 10px 0px 10px 10%;
+    }
+}
+/* 
+@media screen and (min-width: 1024px)
+{
+    #accueil{
+        background-image: url(../../../assets/ressource/background_accueil.svg);
+        background-size: cover;
+    }
+    #accueil #ourMenu {
+        margin-top: 0%;
+        margin-bottom: 1%;
+        height: 35%;
+    }
+
+    #accueil #pointsContainer{
+        width: 300px;
+        height: 20px;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 5px;    
+        box-shadow: black 3px 3px 9px;
+    }
+
+    #accueil #pointsContainer>h3{
+        font-size: 23px;
+    }
+
+    #accueil > #bamboo{
+        width: 20%;
+    }
+
+    #accueil > #greenTopRight2 {
+        width: 22%;
+    }
+
+    #accueil #ourMenu h2 {
+        font-size: 1.4rem;
+    }
+
+    #accueil > h2 {
+        font-size: 1.4rem;
+        margin: 10px 0px 10px 10%;
+        font-weight: bold;
+    }
+    #recommandation{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-family: Poppins!important;
+        font-weight: 600;
+    }
+} */
