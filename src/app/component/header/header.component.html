@@ -1,7 +1,30 @@
-<header *ngIf="showHeader">
+<!-- <header id="header1" *ngIf="showHeader">
     <img src="/assets/ressource/SushiCoBlack.svg" id="appTitle">
     <div routerLink="/app-bag">
         <img src="/assets/ressource/Bag.svg" id="bag" [ngClass]="{'activeBag' : isActive}">
         <div id="bagTotalCount">{{itemNumber}}</div>
+    </div>
+</header> -->
+
+<!--header-pc-->
+
+<header id="header2" *ngIf="showHeader">
+    <div>
+        <img src="/assets/ressource/sushiKoWhite.svg" id="appTitle">
+    </div>
+    <div id="navbar2">
+        <div routerLink="/app-bag">
+            <img src="/assets/ressource/Bag.svg" id="_home">
+        </div>
+        <div routerLink="/app-bag">
+            <img src="/assets/ressource/Bag.svg" id="_menu">
+        </div>
+        <div routerLink="/app-bag">
+            <img src="/assets/ressource/Bag.svg" id="_compte">
+        </div>
+        <div routerLink="/app-bag" id="TEST">
+            <img src="/assets/ressource/Bag.svg" id="_bag">
+            <div id="bagTotalCount">{{itemNumber}}</div>
+        </div>
     </div>
 </header>
