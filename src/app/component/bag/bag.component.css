@@ -53,7 +53,7 @@ h3{
 
 .command-details {
     flex: 1;
-    border-bottom: 1px solid #5d935c; /* Prend le reste de l'espace disponible */
+    border-bottom: 1px solid #5d935c;
 }
 
 .command-details h3 {
@@ -67,14 +67,8 @@ h3{
     align-items: center;
 }
 .remove-button{
-    border: 1px solid var(--green);
+    border: 1px solid var(--black);
     background-color: #202020;
-    font-family: Poppins;
-    cursor: pointer;
-}
-.annuler{
-    border: 1px solid #E35052;
-    background-color: #E35052;
     font-family: Poppins;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -103,28 +97,16 @@ h3{
     font-weight: 500;
 }
 .commander:hover {
-    background-color: var(--dark-green); /* Ajoutez la couleur de fond souhaitée lors du survol */
-    color: var(--light-green); /* Ajoutez la couleur de texte souhaitée lors du survol */
-}
-.commander:active {
-    background-color: var(--darker-green); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
-    color: var(--lighter-green); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+    background-color: var(--dark-green);
+    color: var(--light-green);
 }
 .add-button:hover {
-    background-color: var(--dark-green); /* Ajoutez la couleur de fond souhaitée lors du survol */
-    color: var(--light-green); /* Ajoutez la couleur de texte souhaitée lors du survol */
+    background-color: white;
+    color: #5d935c !important
 }
-.add-button:active {
-    background-color: var(--darker-green); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
-    color: var(--lighter-green); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
-}
-.annuler:hover {
-    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lors du survol */
-    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lors du survol */
-}
-.annuler:active {
-    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
-    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+.remove-button:hover {
+    background-color: white;
+    color: black !important
 }
 #commande{
     margin-left:23px

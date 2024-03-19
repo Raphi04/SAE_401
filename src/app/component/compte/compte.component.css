@@ -47,12 +47,12 @@ h3{
 .command-history {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Espacement entre chaque élément de commande */
+    gap: 20px;
 }
 
 .command-details {
     flex: 1;
-    border-bottom: 1px solid #5d935c; /* Prend le reste de l'espace disponible */
+    border-bottom: 1px solid #5d935c;
 }
 
 .command-details h3 {
@@ -87,25 +87,21 @@ h3{
 .add-button{
     border: 1px solid var(--green);
     background-color: var(--green);
+    color:white;
     font-family: Poppins;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 .add-button:hover {
-    background-color: var(--dark-green); /* Ajoutez la couleur de fond souhaitée lors du survol */
-    color: var(--light-green); /* Ajoutez la couleur de texte souhaitée lors du survol */
-}
-.add-button:active {
-    background-color: var(--darker-green); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
-    color: var(--lighter-green); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+    background-color: white;
+    color: #5d935c !important
 }
 .annuler:hover {
-    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lors du survol */
-    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lors du survol */
+    background-color: white;
+    color: red !important
 }
-.annuler:active {
-    background-color: var(--darker-red); /* Ajoutez la couleur de fond souhaitée lorsqu'actif */
-    color: var(--lighter-red); /* Ajoutez la couleur de texte souhaitée lorsqu'actif */
+#deconnexion:hover{
+    filter: brightness(0.7) saturate(100%) hue-rotate(0deg) !important;
 }
 #commande{
     margin-left:23px
@@ -134,8 +130,8 @@ h3{
     .buttons button {
         margin-right: 10px;
         color: var(--white);
-        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
-        font-size: 0.9rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        padding: 5px 2.5em;
+        font-size: 0.9rem;
         border-radius: 30px;
         font-weight: 500;
     }
@@ -151,8 +147,8 @@ h3{
     .buttons button {
         margin-right: 10px;
         color: var(--white);
-        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
-        font-size: 0.8rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        padding: 5px 2.5em;
+        font-size: 0.8rem;
         border-radius: 30px;
         font-weight: 500;
     }
@@ -168,8 +164,8 @@ h3{
     .buttons button {
         margin-right: 10px;
         color: var(--white);
-        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
-        font-size: 0.6rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        padding: 5px 2.5em;
+        font-size: 0.6rem;
         border-radius: 30px;
         font-weight: 500;
     }
@@ -185,8 +181,8 @@ h3{
     .buttons button {
         margin-right: 10px;
         color: var(--white);
-        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
-        font-size: 0.5rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        padding: 5px 2.5em;
+        font-size: 0.5rem;
         border-radius: 30px;
         font-weight: 500;
     }
@@ -202,8 +198,8 @@ h3{
     .buttons button {
         margin-right: 10px;
         color: var(--white);
-        padding: 5px 2.5em; /* Utilisation d'une unité de police relative */
-        font-size: 0.4rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
+        padding: 5px 2.5em;
+        font-size: 0.4rem;
         border-radius: 30px;
         font-weight: 500;
     }
