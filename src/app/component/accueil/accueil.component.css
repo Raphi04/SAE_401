@@ -1,3 +1,4 @@
+/* Version tel*/
 #accueil {
     display: flex;
     flex-direction: column;
@@ -259,20 +260,210 @@
         margin: 10px 0px 10px 10%;
     }
 }
-/* 
+
+/*Version Pc*/
+#accueil_2 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#accueil_2 #ourMenu_2 {
+    position: relative;
+    margin-top: 0px;
+    width: 72%;
+    height: 20%;
+    display: flex;
+    background-image: url(/assets/ressource/box/sando-box-chicken-katsu.png);
+    background-size: contain;
+    background-position: center center;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#accueil_2 #ourMenu_2 h2 {
+    padding: 10px 0px 10px 20px;
+    height: min-content;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: var(--white);
+
+}
+
+#accueil_2 #pointsContainer_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: calc(90% - 40px);
+    height: 12%;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#pointsContainer_2 > h3 {
+    font-family: Gastroe;
+    font-size: 30px;
+    font-weight: normal;
+} 
+
+
+#accueil_2 #pointsContainer_2 > div {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: var(--black);
+    border-radius: 30px;
+}
+
+#accueil_2 #pointsContainer_2 > div > p {
+    font-family: Poppins;
+    position: absolute;
+    font-size: 1rem;
+    top: -25px;
+    right: 5px;
+}
+
+#accueil_2 #pointsContainer_2 > div > #points_2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+}
+
+#accueil_2 #pointsContainer_2 > div > #points_2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+
+#accueil_2 > h2 {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 25px 0px 15px 10%;
+    align-self: flex-start;
+}
+
+#accueil_2 #recommandationsContainer_2 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--black);
+    z-index: 2;
+
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation {
+    overflow: hidden;
+    position: relative;
+    min-width: 65%;
+    height: calc(100% - 27px);
+    border: 2px solid var(--green);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation:first-child {
+    margin-left: 5%;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation:last-child {
+    margin-right: 5%;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation p {
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: calc(100% - 10px);
+    color: var(--white);
+    z-index: 2;
+    font-size: 1.2rem;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--white);
+    z-index: 2;
+    width: 100%;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars {
+    display: flex;
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars > img {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars > p {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
 @media screen and (min-width: 1024px)
 {
     #accueil{
+        display:none;
+    }
+    #accueil_2{
         background-image: url(../../../assets/ressource/background_accueil.svg);
         background-size: cover;
+        display: flex;
     }
-    #accueil #ourMenu {
+    #accueil_2 #ourMenu_2 {
         margin-top: 0%;
         margin-bottom: 1%;
         height: 35%;
     }
 
-    #accueil #pointsContainer{
+    #accueil_2 #pointsContainer_2{
         width: 300px;
         height: 20px;
         position: absolute;
@@ -282,32 +473,24 @@
         box-shadow: black 3px 3px 9px;
     }
 
-    #accueil #pointsContainer>h3{
+    #accueil_2 #pointsContainer_2>h3{
         font-size: 23px;
     }
 
-    #accueil > #bamboo{
-        width: 20%;
-    }
-
-    #accueil > #greenTopRight2 {
-        width: 22%;
-    }
-
-    #accueil #ourMenu h2 {
+    #accueil_2 #ourMenu_2 h2 {
         font-size: 1.4rem;
     }
 
-    #accueil > h2 {
+    #accueil_2 > h2 {
         font-size: 1.4rem;
         margin: 10px 0px 10px 10%;
         font-weight: bold;
     }
-    #recommandation{
+    #recommandation_2{
         display: flex;
         width: 100%;
         justify-content: center;
         font-family: Poppins!important;
         font-weight: 600;
     }
-} */
+} 
