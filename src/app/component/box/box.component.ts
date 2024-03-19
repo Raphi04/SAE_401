@@ -92,8 +92,12 @@ export class BoxComponent implements OnInit, OnDestroy{
       //On créer une variable pour stocker les informations
       let bagItem = {
         itemID : this.boxID,
+        nom : this.boxInfo[0].nom,
+        aliments : this.boxInfo[0].aliments,
+        prixUnité : this.boxInfo[0].prix,
         quantity : itemNumber
       };
+      console.log(this.boxInfo);
       
       //Si bagContent existe, alors on push directement l'item de dedans sinon on le créer
       if("bagContent" in user) {
@@ -111,6 +115,9 @@ export class BoxComponent implements OnInit, OnDestroy{
         //Si elle existe on modifie juste la quantité, sinon on la met dans bagContent
         if(alreadyExists) {
           user.bagContent[boxID_InBag].quantity += itemNumber;
+          user.bagContent[boxID_InBag].nom = this.boxInfo[0].nom;
+          user.bagContent[boxID_InBag].aliments = this.boxInfo[0].aliments;
+          user.bagContent[boxID_InBag].quantity = this.boxInfo[0].prix;
         } else {
           user.bagContent.push(bagItem)
         }

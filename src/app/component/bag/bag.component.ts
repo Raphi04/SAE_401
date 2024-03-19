@@ -10,7 +10,6 @@ import { HeaderService } from '../../services/header.service';
   styleUrl: './bag.component.css'
 })
 export class BagComponent implements OnInit, OnDestroy{
-  allBox_DB = [];
   bagBoxes = [];
   constructor(private http : HttpClient, private router : Router, private nav : NavService, private header : HeaderService) {}
 
@@ -23,27 +22,20 @@ export class BagComponent implements OnInit, OnDestroy{
     this.header.greenBag(true);
 
     //Récupération des informations nécessaires
-    this.loadBoxDB();
-    let boxes_Local = [];
     let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
+    let userID = 0;
 
     for(let i = 0; i < allUsers.length; i++) {
-      console.log(allUsers[i].bagContent);
       if(allUsers[i].email == currentUser) {
-        boxes_Local = allUsers[i].bagContent;
+        userID = i;
       }
     }
+
+    this.bagBoxes = allUsers[userID].bagContent[0];
+    console.log(this.bagBoxes)
   }
 
   ngOnDestroy(): void {
     this.header.greenBag(false);
   }
-
-  loadBoxDB() {
-    this.http.get("http://localhost/MMI2/SAE_401/api/traitement/read.php").subscribe((boxes: any ) =>{
-      this.allBox_DB = boxes;
-    })  
-  }
-
-
 }
