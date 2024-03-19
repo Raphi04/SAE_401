@@ -467,10 +467,10 @@
         width: 300px;
         height: 20px;
         position: absolute;
-        bottom: 5px;
-        right: 5px;
+        bottom: 9px;
+        right: 9px;
         border-radius: 5px;    
-        box-shadow: black 3px 3px 9px;
+        box-shadow: #3d3d3d 3px 3px 9px;
     }
 
     #accueil_2 #pointsContainer_2>h3{
