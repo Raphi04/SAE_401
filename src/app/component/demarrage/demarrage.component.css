@@ -1,22 +1,47 @@
 #demarrage {
     width: 100%;
-    height: calc(100% - 175px);
+    height: 100%;
     display: flex;
+    justify-content: end;
     flex-direction: column;
     align-items: center;
     padding: 175px 0px 0px 0px;
     background-color: var(--white);
 }
-
+/*-----------------------------------------------------------*/
+/*Bamboo Phone*/
 #demarrage #bamboo {
     position: absolute;
-    width: 175px;
-    top: 0px;
-    left: 0px;
+    width: 50%;
+    top: 0%;
+    left: 0%;
 }
-
+/*Bamboo LAPTOP*/
+#demarrage #bamboo3 {
+    position: absolute;
+    display: block;
+    width: 23%;
+    top: 3%;
+    left: 0%;
+}
+#demarrage #bamboo4 {
+    position: absolute;
+    display: block;
+    width: 32%;
+    bottom: 0%;
+    left: 0%;
+}
+#demarrage #bamboo5 {
+    position: absolute;
+    display: block;
+    width: 28%;
+    top: 0%;
+    right: 0%;
+}
+/*-----------------------------------------------------------*/
 #demarrage #imgContainer {
     width: 100%;
+    height: 60%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -25,23 +50,23 @@
 }
 
 #demarrage #imgContainer #sushiko {
-    width: 200px;
+    width: 55%;
 }
 
 #demarrage #imgContainer #sushiJap {
-    width: 220px;
+    width: 55%;
 }
 
 #demarrage #imgContainer #panda {
     position: absolute;
-    bottom: -15px;
-    right: 25px;
-    width: 200px;
+    bottom: -5%;
+    right: 10%;
+    width: 45%;
 }
 
 #demarrage #buttonContainer {
     width: 75%;
-    margin-top: 50px;
+    height: 27%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,12 +74,13 @@
     gap: 1rem;
 }
 
-#demarrage #buttonContainer .button {
+#demarrage #buttonContainer .button1,.button2 {
     width: 80%;
-    padding: 10px;
+    padding: 2%;
     font-size: 1.5rem;
     border-radius: 30px;
     justify-content: center;
+    border: solid 3px var(--green);
 }
 
 #demarrage #buttonContainer #connexion {
@@ -72,4 +98,208 @@
     text-decoration: none;
     border-bottom: 2px solid;
     border-color: var(--green);
+}
+
+/*MEDIA*/
+
+/*----------------------PHONE----------------------*/
+@media screen and (max-width: 769px){
+    #demarrage #bamboo3, #bamboo4, #bamboo5 {
+        display: none !important;            
+    }
+ }
+@media screen and (min-width: 320px){
+    #demarrage #bamboo {
+        width: 60%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 17px;
+    }
+    #demarrage #imgContainer #panda {
+        bottom: 10%;
+        width: 55%;
+    }
+ }
+ @media screen and (min-width: 375px){
+    #demarrage #bamboo {
+        width: 50%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 20px;
+    }
+    #demarrage #imgContainer #panda {
+        bottom: 1%;
+        right: 8%;
+        width: 60%;
+    }   
+ }
+@media screen and (min-width: 425px){
+    #demarrage #bamboo {
+        width: 40%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 22px;
+    }
+    #demarrage #imgContainer #panda {
+        bottom: -4%;
+        right: 6%;
+        width: 60%;
+    }   
+ }
+ @media screen and (min-width: 768px){
+
+    #demarrage #imgContainer #sushiko {
+        width: 37%;
+    }
+    
+    #demarrage #imgContainer #sushiJap {
+        width: 34%;
+    }
+    
+    #demarrage #imgContainer #panda {
+        bottom: -10%;
+        right: 3%;
+        width: 50%;
+    } 
+}
+ @media screen and (min-width: 769px){
+    #demarrage #bamboo {
+        display: none;
+    }
+ }
+
+ /*----------------------LAPTOP----------------------*/
+ @media screen and (min-width: 1024px){
+    #demarrage #imgContainer #sushiko {
+        width: 30%;
+    }
+    
+    #demarrage #imgContainer #sushiJap {
+        width: 30%;
+    }
+    
+    #demarrage #imgContainer #panda {
+        position: absolute;
+        bottom: -40%;
+        right: 22%;
+        width: 40%;
+    }
+    #demarrage #buttonContainer .button1,.button2 {
+        width: 30%;
+        padding: 1%;
+        font-size: 1.6rem;
+        border: solid 4px var(--green);
+    }
+    #demarrage #buttonContainer .button1 {
+        position: absolute;
+        top:35%;
+    }
+    #demarrage #buttonContainer .button2 {
+        position: absolute;
+        top:45%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 24px;
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    #demarrage #imgContainer #panda {
+        bottom: -40%;
+        width: 35%;
+    }
+    #demarrage #buttonContainer .button1,.button2 {
+        width: 32%;
+        font-size: 2.5rem;
+        border: solid 6px var(--green);
+    }
+    #demarrage #buttonContainer .button2 {
+        top:46%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 1920px){
+    #demarrage #imgContainer {
+        height: 46%;
+    }
+    #demarrage #imgContainer #sushiko {
+        width: 25%;
+    }
+    
+    #demarrage #imgContainer #sushiJap {
+        width: 23%;
+    }
+    #demarrage #imgContainer #panda {
+        bottom: -58%;
+        right: 25%;
+        width: 22%;
+    }
+    #demarrage #buttonContainer .button1,.button2 {
+        width: 35%;
+        padding: 0.7%;
+        font-size: 2.7rem;
+    }
+    #demarrage #buttonContainer .button1 {
+        top:40%;
+    }
+    #demarrage #buttonContainer .button2 {
+        top:52%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 45px;
+    }
+    #demarrage #bamboo3 {
+        width: 14%;
+    }
+    #demarrage #bamboo4 {
+        width: 24%;
+    }
+    #demarrage #bamboo5 {
+        width: 19%;
+    }
+}
+@media screen and (min-width: 2560px){
+    #demarrage #imgContainer {
+        height: 46%;
+    }
+    #demarrage #imgContainer #sushiko {
+        width: 25%;
+    }
+    
+    #demarrage #imgContainer #sushiJap {
+        width: 27%;
+    }
+    #demarrage #imgContainer #panda {
+        bottom: -58%;
+        width: 30%;
+    }
+
+    #demarrage #buttonContainer .button1,.button2 {
+        width: 35%;
+        font-size: 3.5rem;
+    }
+    #demarrage #buttonContainer .button1 {
+        top:40%;
+    }
+    #demarrage #buttonContainer .button2 {
+        top:51%;
+    }
+    #demarrage #buttonContainer #non_inscrit {
+        font-size: 60px;
+    }
+    #demarrage #bamboo3 {
+        width: 18%;
+    }
+    #demarrage #bamboo4 {
+        width: 28%;
+    }
+    #demarrage #bamboo5 {
+        width: 23%;
+    }
 }
