@@ -51,7 +51,7 @@ https://github.com/Raphi04/SAE_401/commits/master/
 Vous retrouverez dans ce document le compte rendue des tests unitaires, la page pour la prise en compte des droits RGPD ainsi que les deux scénarios malveillants et les mesures pour les contrecarrer.
 
 ### Compte-Rendue des tests-unitaires
-
+(en attente)
 ### Prise en compte des droits RGPD
 Dernière mise à jour : 18/03/24
 
@@ -82,4 +82,16 @@ Si vous avez des questions concernant cette politique de confidentialité, veuil
 
 ### Deux scénarios malveillants et les mesures pour le contrecarrer
 
+#### Scénario 1 : Un attaquant tente d'accéder aux identifiants de l'utilisateur via le local Storage.Il accéde même au local storage  Cela peut compromettre la sécurité des comptes utilisateur et permettre à l'attaquant d'accéder à des fonctionnalités sensibles, comme passer des commandes sous un compte qui n'est pas le sien.
 
+##### Les contremesures :
+
+- Hasher les mots de passes dans le local storage
+- Limiter le nombre de tentatives de connexion avant un blocage temporaire. Par exemple, après trois tentatives infructueuses, le compte est verrouillé pendant un certain temps.
+- Encourager les utilisateurs à choisir des mots de passe robustes et à ne pas utiliser des combinaisons faciles à deviner.
+
+#### Scénario 2 : Un attaquant tente de passer des commandes sans se connecter ou s'inscrire.
+
+##### Les contremesures :
+
+- Vérifications de session en début de chaque fichier pour s'assurer que la personnes s'est inscrite ou connecter. Si ce n'est pas le cas, elle est redirigée vers l'espace de connexion. Elle ne peut donc pas accéder par injection d'URL.
