@@ -5,7 +5,6 @@
     justify-content: end;
     flex-direction: column;
     align-items: center;
-    padding: 175px 0px 0px 0px;
     background-color: var(--white);
 }
 /*-----------------------------------------------------------*/
@@ -90,6 +89,7 @@
 
 #demarrage #buttonContainer #inscription {
     border: 2px solid var(--green);
+    background-color: var(--white);
     color: var(--green);
 }
 #demarrage #buttonContainer #non_inscrit {

@@ -3,34 +3,40 @@ body{
     height:100em;
 }
 #ListCommande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
-    height: calc(100% - 60px);
-    padding-top: 60px;
+    height: calc(100% - 75px);
+    padding-top: 75px;
     color: white;
     background-color: var(--white);
     color: var(--black);
     overflow-y:scroll;
 }
-#ListCommande #commande {
-    position: relative;
-    margin: 35px;
+
+#ListCommande > div {
     height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
     padding: 10px 20px;
     border-radius: 10px;
-    z-index: 10;
 }
-#ListCommande #commande h2 {
+
+#listCommande > div {
+    width: 20px;
+}
+
+
+#ListCommande > h2 {
     font-family: Poppins;
     font-weight: 600;
     font-size: 1.3rem;
 }
-#ListCommande > h2 {
-    font-family: Poppins;
-    font-size: 1.3rem;
-    margin: 25px 0px 15px 10%;
-    align-self: flex-start;
-}
+
 h1 {
     font-family: Poppins;
     font-size: 2.3rem;

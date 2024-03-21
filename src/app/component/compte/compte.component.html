@@ -1,12 +1,9 @@
 <section id="ListCommande">
-<div id="commande" routerLink="/app-compte" routerLinkActive="active">
-    <div style="display: flex; align-items: center;justify-content: space-between;">
-        <div>
-            <h1>Mon Profil</h1>
-            <h2>Historique des commandes</h2>
-        </div>
-        <img (click)="disconnectUser()" style="width:auto;height:2em;cursor:pointer" id="deconnexion"alt="icon de deconnexion" src="../../../assets/ressource/icon_deconnexion.png">
+    <div>
+        <h1>Mon Profil</h1>
+        <img (click)="disconnectUser()" id="deconnexion"alt="icon de deconnexion" src="../../../assets/ressource/icon_deconnexion.png">
     </div>
+    <h2>Historique des commandes</h2>
     <br>
     <div *ngIf="historiqueEmpty">
         <p>Il y a pas</p>
@@ -32,5 +29,4 @@
             </div>
         </div>
     </div>
-</div>
 </section>
