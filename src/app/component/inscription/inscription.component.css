@@ -32,7 +32,7 @@ section > #greenBottomLeft {
 }
 
 section > h2 {
-    margin-top: 75px;
+    margin-top: 65px;
     color: var(--black);
     font-weight: 500;
     z-index: 10;
@@ -45,6 +45,7 @@ section > hr {
 }
 
 section > form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,4 +115,258 @@ section > form > #inscriptionButton {
     color: rgb(219, 0, 0) !important;
     font-family: Poppins;
     font-size: 0.8rem;
+}
+
+
+/*MEDIA*/
+section {
+    position: relative;
+    height: calc(100% - 130px);
+    width: calc(100% - 100px);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 50px;
+}
+
+section > img {
+    width: 175px;
+    z-index: 10;
+}
+
+section > #greenTopRight {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 160px;
+    z-index: 1;
+}
+
+section > #greenBottomLeft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 155px;
+    z-index: 1;
+}
+
+section > h2 {
+    margin-top: 75px;
+    color: var(--black);
+    font-weight: 500;
+    z-index: 10;
+}
+
+section > hr {
+    margin: 7px 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+section > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section > form > div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+section > form > div > label {
+    color: var(--black);
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+section > form > div > input {
+    border: none;
+    outline: none;
+    padding: 5px 5px 5px 15px;
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: black;
+    background-color: transparent;
+}
+
+section > form > hr {
+    margin: 7px 0px;
+    width: 100%;
+}
+
+section > form > #connexionButton {
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--green);
+    text-align: center;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+}
+
+section > #inscriptionButton {
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-align: center;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+}
+
+.errorInput {
+    border: 1px solid rgb(219, 0, 0) !important;
+}
+
+.errorMessage {
+    color: rgb(219, 0, 0) !important;
+    font-family: Poppins;
+    font-size: 0.8rem;
+}
+
+
+/*MEDIA*/
+@media screen and (min-width: 768px){ 
+    section > img {
+        width: 40%;
+    }
+
+    section > #greenTopRight {
+        width: 20%;
+    }
+
+    section > #greenBottomLeft {
+        width: 15%;
+    }
+
+    section > h2 {
+        font-size: 45px;
+    }
+    section > hr {
+        width: 85%;
+    }
+    section > form {
+        width: 85%;
+    }
+    section > #connexionButton {
+        width: 85%;
+        font-size: 1.5rem;
+    }
+    section > form > div > label {
+        font-size: 1.4rem;
+    }
+    section > form > div > input {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){ 
+    section > img {
+        width: 32%;
+    }
+
+    section > #greenTopRight {
+        width: 17%;
+    }
+
+    section > #greenBottomLeft {
+        width: 13%;
+    }
+
+    section > h2 {
+        font-size: 45px;
+    }
+    section > hr {
+        width: 80%;
+    }
+    section > form {
+        width: 80%;
+    }
+    section > #connexionButton {
+        width: 80%;
+    }
+    section > form > div > label {
+        font-size: 1.4rem;
+    }
+    section > form > div > input {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1440px){  
+    section > img {
+        width: 28%;
+    }
+    
+    section > #greenTopRight {
+        width: 17%;
+    }
+    
+    section > #greenBottomLeft {
+        width: 13%;
+    }
+    
+    section > h2 {
+        font-size: 55px;
+    }
+    section > hr {
+        width: 75%;
+    }
+    section > form {
+        width: 75%;
+    }
+    section > form > div > label {
+        font-size: 1.6rem;
+    }
+    section > form > div > input {
+        font-size: 1.3rem;
+    }
+    section > #connexionButton {
+        width: 75%;
+        font-size: 1.8rem;
+    }
+    
+    section > form > #inscriptionButton {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 1920px){  
+    section > img {
+        width: 25%;
+    }
+    section > h2 {
+        margin-top: 50px;
+        font-size: 75px;
+    }
+    section > hr {
+        width: 65%;
+    }
+    section > form {
+        width: 65%;
+    }
+    section > form > div > label {
+        font-size: 1.9rem;
+    }
+    section > form > div > input {
+        font-size: 1.5rem;
+    }
+    section >  #connexionButton {
+        width: 65%;
+        font-size: 2.3rem;
+    }
+    
+    section > form >#inscriptionButton {
+        font-size: 2.3rem;
+    }
 }

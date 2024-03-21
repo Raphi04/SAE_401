@@ -113,3 +113,134 @@ section > #inscriptionButton {
     font-family: Poppins;
     font-size: 0.8rem;
 }
+
+
+/*MEDIA*/
+@media screen and (min-width: 768px){ 
+    section > img {
+        width: 40%;
+    }
+
+    section > #greenTopRight {
+        width: 20%;
+    }
+
+    section > #greenBottomLeft {
+        width: 15%;
+    }
+
+    section > h2 {
+        font-size: 45px;
+    }
+    section > hr {
+        width: 85%;
+    }
+    section > form {
+        width: 85%;
+    }
+    section > #inscriptionButton {
+        width: 85%;
+    }
+    section > form > div > label {
+        font-size: 1.4rem;
+    }
+    section > form > div > input {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){ 
+    section > img {
+        width: 32%;
+    }
+
+    section > #greenTopRight {
+        width: 17%;
+    }
+
+    section > #greenBottomLeft {
+        width: 13%;
+    }
+
+    section > h2 {
+        font-size: 45px;
+    }
+    section > hr {
+        width: 80%;
+    }
+    section > form {
+        width: 80%;
+    }
+    section > #inscriptionButton {
+        width: 80%;
+    }
+    section > form > div > label {
+        font-size: 1.4rem;
+    }
+    section > form > div > input {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1440px){  
+    section > img {
+        width: 28%;
+    }
+    
+    section > #greenTopRight {
+        width: 17%;
+    }
+    
+    section > #greenBottomLeft {
+        width: 13%;
+    }
+    
+    section > h2 {
+        font-size: 55px;
+    }
+    section > hr {
+        width: 75%;
+    }
+    section > form {
+        width: 75%;
+    }
+    section > form > div > label {
+        font-size: 1.6rem;
+    }
+    section > form > div > input {
+        font-size: 1.3rem;
+    }
+    section > form > #connexionButton {
+        font-size: 1.8rem;
+    }
+    
+    section > #inscriptionButton {
+        width: 75%;
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 1920px){  
+    section > h2 {
+        font-size: 75px;
+    }
+    section > hr {
+        width: 65%;
+    }
+    section > form {
+        width: 65%;
+    }
+    section > form > div > label {
+        font-size: 1.9rem;
+    }
+    section > form > div > input {
+        font-size: 1.5rem;
+    }
+    section > form > #connexionButton {
+        font-size: 2.3rem;
+    }
+    
+    section > #inscriptionButton {
+        width: 65%;
+        font-size: 2.3rem;
+    }
+}
