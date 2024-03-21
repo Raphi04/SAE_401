@@ -1,5 +1,5 @@
 <header id="header1" *ngIf="showHeader">
-    <img src="/assets/ressource/SushiCoBlack.svg" id="appTitle">
+    <img routerLink="/app-accueil" src="/assets/ressource/SushiCoBlack.svg" id="appTitle">
     <div routerLink="/app-bag">
         <img src="/assets/ressource/Bag.svg" id="bag" [ngClass]="{'activeBag' : isActive}">
         <div id="bagTotalCount">{{itemNumber}}</div>
@@ -10,16 +10,16 @@
 
 <!-- <header id="header2" *ngIf="showHeader">
     <div>
-        <img src="/assets/ressource/SushiCoBlack.svg" id="appTitle">
+        <img routerLink="/app-accueil" src="/assets/ressource/SushiCoBlack.svg" id="appTitle">
     </div>
     <div id="navbar2">
-        <div routerLink="/app-bag">
+        <div routerLink="/app-accueil">
             <img src="/assets/ressource/home.svg" id="_home">
         </div>
-        <div routerLink="/app-bag">
+        <div routerLink="/app-menu">
             <img src="/assets/ressource/menu.svg" id="_menu">
         </div>
-        <div routerLink="/app-bag">
+        <div routerLink="/app-compte">
             <img src="/assets/ressource/compte.svg" id="_compte">
         </div>
         <div routerLink="/app-bag">
