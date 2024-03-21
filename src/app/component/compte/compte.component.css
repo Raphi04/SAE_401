@@ -8,7 +8,7 @@ body{
     position: relative;
     width: 100%;
     height: calc(100% - 120px);
-    padding-top: 120px;
+    padding-top: 90px;
     color: white;
     background-color: var(--white);
     color: var(--black);
@@ -59,7 +59,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 #ListCommande .command-history::after {
