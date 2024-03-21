@@ -520,6 +520,7 @@
         margin-top: 5%;
         margin-bottom: 1%;
         height: 39%;
+        width: 48%;
     }
     #accueil_2 #pointsContainer_2  {
         width: 360px;
@@ -534,4 +535,8 @@
     #header2 > div > img {
         width: 100%;
     }
+    #accueil_2 #recommandationsContainer_2 .recommandation {
+        min-width: 25%;
+        background-size: contain;
+
 }
