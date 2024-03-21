@@ -18,23 +18,27 @@ export class BagService {
    }
 
    checkNewBag() {
-        //Get bag info
-        let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
-        let currentUser = localStorage.getItem("currentUser");
-        let bagCount;
-    
-        for(let i = 0; i < allUsers.length; i++) {
-          if(allUsers[i].email == currentUser) {
-            bagCount = allUsers[i].bag;
-          }
-        }
-    
-        //Update service
-        if(bagCount > 0) {
-          this.changeBoxNumber(bagCount);
+    //Get bag info
+    let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
+    let currentUser = localStorage.getItem("currentUser");
+    let bagCount;
+
+    for(let i = 0; i < allUsers.length; i++) {
+      if(allUsers[i].email == currentUser) {
+        if(allUsers[i].hasOwnProperty("bag")) {
+          bagCount = allUsers[i].bag;
         } else {
-          this.changeBoxNumber(0);
+          bagCount = 0;
         }
+      }
+    }
+
+    //Update service
+    if(bagCount > 0) {
+      this.changeBoxNumber(bagCount);
+    } else {
+      this.changeBoxNumber(0);
+    }
   }
 
   calculTotal() {
@@ -44,8 +48,16 @@ export class BagService {
 
     for(let i = 0; i < allUsers.length; i++) {
       if(allUsers[i].email == currentUser) {
-        let bagBoxes = allUsers[i].bagContent;
+        let bagBoxes;
+
+        if(allUsers[i].hasOwnProperty("bagContent")){
+          bagBoxes = allUsers[i].bagContent;
+        } else {
+          bagBoxes = [];
+        }
+
         let total = 0;
+        
         for(let i = 0; i < bagBoxes.length; i++) {
           let multiplication = bagBoxes[i].prixUnité * bagBoxes[i].quantity;
           total += multiplication;

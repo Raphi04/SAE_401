@@ -1,5 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { NavService } from '../../services/nav.service';
 import { HeaderService } from '../../services/header.service';
@@ -18,7 +17,7 @@ export class BagComponent implements OnInit, OnDestroy{
   subscription : Subscription
   noBoxFound: boolean = false;
 
-  constructor(private http : HttpClient, private router : Router, private nav : NavService, private header : HeaderService, private bag : BagService) {
+  constructor(private router : Router, private nav : NavService, private header : HeaderService, private bag : BagService) {
     this.subscription = this.bag.totalPrix.subscribe((value) => {
       this.totalPrix = value;
     })
@@ -42,8 +41,14 @@ export class BagComponent implements OnInit, OnDestroy{
         userID = i;
       }
     }
+    
+    if(allUsers[userID].hasOwnProperty("bagContent")) {
+      this.bagBoxes = allUsers[userID].bagContent;
+    } else {
+      this.bagBoxes = [];
+    }
 
-    this.bagBoxes = allUsers[userID].bagContent;
+    
     this.bag.calculTotal();
     this.checkBox();
   }
