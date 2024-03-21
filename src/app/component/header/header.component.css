@@ -150,6 +150,7 @@
         height: 50px;
         display: flex;
     }
+
 }
 @media screen and (min-width: 2560px){
     #header2 {

@@ -202,7 +202,7 @@
 @media screen and (min-width: 425px)
 {
     #accueil #ourMenu {
-        margin-top: 12%;
+        margin-top: 9%;
         margin-bottom: 5%;
         width: 90%;
         height: 23%;
@@ -222,6 +222,14 @@
 
 @media screen and (min-width: 768px)
 {
+    #accueil #recommandationsContainer {
+        height: 30%;
+    }
+    #accueil #recommandationsContainer .recommandation {
+        min-width: 43%;
+        height: calc(100% - 27px);
+        margin-bottom: 24px;
+    }
     #accueil #ourMenu {
         margin-top: 4%;
         margin-bottom: 2%;
@@ -434,21 +442,27 @@
     width: 100%;
 }
 
-#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars {
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars_2 {
     display: flex;
 }
 
-#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars > img {
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars_2 > img {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars > p {
+#accueil_2 #recommandationsContainer_2 .recommandation > div > #stars_2 > p {
     padding-left: 0;
     padding-right: 10px;
 }
 
 @media screen and (min-width: 1024px)
 {
+    #accueil_2 #recommandationsContainer_2 {
+        height: 33%;
+    }
+    #accueil_2 #recommandationsContainer_2 .recommandation {
+        min-width: 48%;
+    }
     #accueil_2 {
         height: calc(100%);
     }
@@ -465,7 +479,10 @@
         margin-bottom: 1%;
         height: 35%;
     }
-
+    #recommandation_2{
+        cursor: pointer;
+    }
+    
     #accueil_2 #pointsContainer_2{
         width: 300px;
         height: 20px;
@@ -495,12 +512,26 @@
         justify-content: center;
         font-family: Poppins!important;
         font-weight: 600;
+        padding: 10px;
     }
 } 
 @media screen and (min-width: 1440px){
     #accueil_2 #ourMenu_2 {
-        margin-top: 0%;
+        margin-top: 5%;
         margin-bottom: 1%;
         height: 39%;
+    }
+    #accueil_2 #pointsContainer_2  {
+        width: 360px;
+        height: 37px;
+    }   
+    #accueil_2 #pointsContainer_2 > h3 {
+        font-size: 31px;
+    }
+    #recommandation_2 > h2 {
+        font-size: 27px;
+    }
+    #header2 > div > img {
+        width: 100%;
     }
 }
