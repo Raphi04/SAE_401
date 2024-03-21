@@ -13,10 +13,8 @@ body{
     overflow-y:scroll;
 }
 #ListCommande #commande {
-    position: relative;
     margin: 35px;
-    height: 20%;
-    padding: 10px 20px;
+    padding: 10px 20px 100px 20px;
     border-radius: 10px;
     z-index: 10;
 }
@@ -36,11 +34,9 @@ h1 {
     font-size: 1.6rem;
     align-self: flex-start;
 }
-p{
+p, li{
     font-family: Poppins;
-    text-align: justify;
-    margin-right: 2em;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
 }
 h3{
     font-size: 1.6rem;
@@ -106,6 +102,11 @@ h3{
 #commande{
     margin-left:23px
 }
+
+#commande hr {
+    border-color: var(--green);
+}
+
 .separator {
     width: 1px;
     background-color: white;
@@ -118,8 +119,10 @@ h3{
 }
 .price{
     display:flex;
+    align-items: center;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0px;
 }
 #prixT{
     color: var(--green);
@@ -144,6 +147,9 @@ h3{
     margin-right: 10px;
     color: var(--white);
     padding: 5px 10px;
+    color: var(--black);
+    padding: 5px 2.5em;
+    font-size: auto;
     border-radius: 30px;
     font-weight: 500;
 }

@@ -6,8 +6,11 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class BagService {
   bagItemNumber : BehaviorSubject<number>
+  totalPrix : BehaviorSubject<number>
+
   constructor() {
     this.bagItemNumber = new BehaviorSubject(0);
+    this.totalPrix = new BehaviorSubject(0);
    }
 
    changeBoxNumber(newNumber: any) {
@@ -29,6 +32,26 @@ export class BagService {
         //Update service
         if(bagCount > 0) {
           this.changeBoxNumber(bagCount);
-        }    
-   }
+        } else {
+          this.changeBoxNumber(0);
+        }
+  }
+
+  calculTotal() {
+    //Get bag info
+    let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
+    let currentUser = localStorage.getItem("currentUser");
+
+    for(let i = 0; i < allUsers.length; i++) {
+      if(allUsers[i].email == currentUser) {
+        let bagBoxes = allUsers[i].bagContent;
+        let total = 0;
+        for(let i = 0; i < bagBoxes.length; i++) {
+          let multiplication = bagBoxes[i].prixUnité * bagBoxes[i].quantity;
+          total += multiplication;
+        }
+        this.totalPrix.next(total);
+      }    
+    }
+  }
 }

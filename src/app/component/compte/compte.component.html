@@ -8,124 +8,29 @@
         <img (click)="disconnectUser()" style="width:auto;height:2em;cursor:pointer" id="deconnexion"alt="icon de deconnexion" src="../../../assets/ressource/icon_deconnexion.png">
     </div>
     <br>
-<div class="command-history">
-    <div class="history1">
-        <div class="command-details">
-            <div class="price">
-                <h3>Commande 1</h3>
-                <h3 id="prix">10.90 €</h3>
-            </div>
-            <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-            <div class="buttons">
-                <div>
-                    <button class="add-button">Détails</button>
-                    <button href=""class="remove-button">En cours de livraison</button>
+    <div *ngIf="historiqueEmpty">
+        <p>Il y a pas</p>
+    </div>
+    <div class="command-history" *ngIf="!historiqueEmpty">
+        <div class="history1">
+            <div class="command-details" *ngFor="let item of historique; let i = index">
+                <div class="price">
+                    <h3>Commande {{item.commandeNumber}}</h3>
+                    <h3 id="prix">{{item.price.toFixed(2)}} €</h3>
                 </div>
-                <button href=""class="annuler">Annuler</button>
-            </div>
-        </div>
-        <div class="command-details">
-            <div class="price">
-                <h3>Commande 2</h3>
-                <h3 id="prix">10.90 €</h3>
+                <ul>
+                    <ng-container *ngFor="let boxes of item.boxes">
+                        <li>{{boxes.nom}} x{{boxes.quantity}}</li>
+                    </ng-container>
+                </ul>
+                <div class="buttons">
+                    <div>
+                        <button href=""class="remove-button">En cours de livraison</button>
+                    </div>
+                    <button (click)="Annuler(i)" class="annuler">Annuler</button>
                 </div>
-            <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-            <div class="buttons">
-                <div>
-                    <button class="add-button">Détails</button>
-                    <button class="remove-button">En cours de livraison</button>
-                </div>
-                <button class="annuler">Annuler</button>
-            </div>
-        </div>
-        <div class="command-details">
-            <div class="price">
-                <h3>Commande 3</h3>
-                <h3 id="prix">10.90 €</h3>
-                </div>
-            <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-            <div class="buttons">
-                <div>
-                    <button class="add-button">Détails</button>
-                    <button class="remove-button">En cours de livraison</button>
-                </div>
-                <button class="annuler">Annuler</button>
-            </div>
-        </div>
-        <div class="command-details">
-            <div class="price">
-                <h3>Commande 4</h3>
-                <h3 id="prix">10.90 €</h3>
-                </div>
-            <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-            <div class="buttons">
-                <div>
-                    <button class="add-button">Détails</button>
-                    <button class="remove-button">En cours de livraison</button>
-                </div>
-                <button class="annuler">Annuler</button>
             </div>
         </div>
     </div>
-<div class="separator"></div>
-<div class="history2">
-    <div class="command-details">
-        <div class="price">
-            <h3>Commande 5</h3>
-            <h3 id="prix">10.90 €</h3>
-            </div>
-        <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-        <div class="buttons">
-            <div>
-                <button class="add-button">Détails</button>
-                <button class="remove-button">En cours de livraison</button>
-            </div>
-            <button class="annuler">Annuler</button>
-        </div>
-    </div>
-    <div class="command-details">
-        <div class="price">
-            <h3>Commande 6</h3>
-            <h3 id="prix">10.90 €</h3>
-            </div>
-        <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-        <div class="buttons">
-            <div>
-                <button class="add-button">Détails</button>
-                <button class="remove-button">En cours de livraison</button>
-            </div>
-            <button class="annuler">Annuler</button>
-        </div>
-    </div>
-    <div class="command-details">
-        <div class="price">
-            <h3>Commande 7</h3>
-            <h3 id="prix">10.90 €</h3>
-            </div>
-        <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-        <div class="buttons">
-            <div>
-                <button class="add-button">Détails</button>
-                <button class="remove-button">En cours de livraison</button>
-            </div>
-            <button class="annuler">Annuler</button>
-        </div>
-    </div>
-    <div class="command-details">
-        <div class="price">
-            <h3>Commande 8</h3>
-            <h3 id="prix">10.90 €</h3>
-            </div>
-        <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus.</p>
-        <div class="buttons">
-            <div>
-                <button class="add-button">Détails</button>
-                <button class="remove-button">En cours de livraison</button>
-            </div>
-            <button class="annuler">Annuler</button>
-        </div>
-    </div>
-</div>
-</div>
 </div>
 </section>

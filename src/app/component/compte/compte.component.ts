@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
   styleUrl: './compte.component.css'
 })
 export class CompteComponent implements OnInit {
+
+  historique : any = [];
+  historiqueEmpty = true;
+
   constructor(private nav : NavService, private router : Router) {}
 
   ngOnInit(): void {
@@ -16,6 +20,46 @@ export class CompteComponent implements OnInit {
       this.router.navigate([`/app-connexion`]);
     }
     this.nav.changeActive("compte");
+
+    this.getHistorique();
+  }
+
+  getHistorique() {
+    //Récupération de l'historique
+    let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
+    let currentUser = localStorage.getItem("currentUser");
+
+    for(let i = 0; i < allUsers.length; i++) {
+      if(allUsers[i].email = currentUser) {
+        this.historique = allUsers[i].historique;
+      }
+    }
+
+    if(this.historique.length > 0) {
+      this.historiqueEmpty = false;
+    } else {
+      this.historiqueEmpty = true;
+    }  
+  }
+
+  Annuler(id: number) {
+    debugger
+    let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
+    let currentUser = localStorage.getItem("currentUser");
+
+    for(let i = 0; i < allUsers.length; i++) {
+      if(allUsers[i].email = currentUser) {
+        if(allUsers[i].historique[id].commandeNumber == allUsers[i].historiqueLastNumber) {
+          allUsers[i].historiqueLastNumber = allUsers[i].historiqueLastNumber - 1;
+        }
+        allUsers[i].historique.splice(id, 1);
+      }
+    }
+
+    //Mise à jour de allUsers
+    localStorage.setItem("allUsers", JSON.stringify(allUsers));
+
+    this.getHistorique();
   }
 
   disconnectUser(): void {
