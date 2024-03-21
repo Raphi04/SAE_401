@@ -32,7 +32,7 @@ export class MenuComponent implements OnInit {
   }
 
   loadBoxes() {
-    this.http.get("http://localhost/MMI2/SAE_401/api/traitement/read.php").subscribe((boxes: any ) =>{
+    this.http.get("https://api-sushi-ko.alwaysdata.net/traitement/read.php").subscribe((boxes: any ) =>{
       this.boxes = boxes;
     })
   }

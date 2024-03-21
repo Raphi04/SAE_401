@@ -147,7 +147,7 @@ export class BoxComponent implements OnInit, OnDestroy{
   }
   
   loadBox() {
-    this.http.get("http://localhost/MMI2/SAE_401/api/traitement/read.php?id="+this.boxID).subscribe((boxes: any ) => {
+    this.http.get("https://api-sushi-ko.alwaysdata.net/traitement/read.php?id="+this.boxID).subscribe((boxes: any ) => {
       this.boxInfo = boxes;
     })
   }

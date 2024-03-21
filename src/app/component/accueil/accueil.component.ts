@@ -34,7 +34,7 @@ export class AccueilComponent implements OnInit {
   }
 
   loadRecommandation() {
-    this.http.get("lien+traitement et read").subscribe((recommandations: any) => {
+    this.http.get("https://api-sushi-ko.alwaysdata.net/traitement/read.php").subscribe((recommandations: any) => {
       this.recommandations = recommandations;
     })
   }
