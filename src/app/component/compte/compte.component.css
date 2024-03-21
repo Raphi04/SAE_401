@@ -5,72 +5,116 @@ body{
 #ListCommande {
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
     width: 100%;
-    height: calc(100% - 75px);
-    padding-top: 75px;
+    height: calc(100% - 120px);
+    padding-top: 120px;
     color: white;
     background-color: var(--white);
     color: var(--black);
-    overflow-y:scroll;
 }
 
 #ListCommande > div {
-    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 20px);
-    padding: 10px 20px;
+    width: calc(100% - 50px);
+    padding: 0px 25px;
     border-radius: 10px;
 }
 
-#listCommande > div {
-    width: 20px;
-}
-
-
-#ListCommande > h2 {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-h1 {
+#ListCommande > div > h1 {
     font-family: Poppins;
     font-size: 2.3rem;
+    font-weight: 600;
     align-self: flex-start;
 }
-p{
+
+#ListCommande > div > img {
+    width: 35px;
+    cursor: pointer;
+}
+
+#ListCommande > h2 {
+    margin-top: 10px;
+    margin-left: 25px;
     font-family: Poppins;
-    text-align: justify;
-    margin-right: 2em;
+    font-weight: 200;
+    font-size: 1.4rem;
 }
-h3{
-    font-size: 1.6rem;
+
+#ListCommande >  hr {
+    margin: 10px 0px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid var(--green);
 }
-.command-history {
+
+#ListCommande .command-history {
+    overflow-y: auto;
+    position: relative;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 120px;
 }
 
-.command-details {
-    flex: 1;
-    border-bottom: 1px solid #5d935c;
+#ListCommande .command-history::after {
+    top: 0px;
+    left: 50%;
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 1px;
+    border-right: 2px solid var(--green);
 }
 
-.command-details h3 {
-    margin: 0;
+#ListCommande .command-history .command-details {
+    position: relative;
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    padding-bottom: 60px;
 }
-.buttons {
-    margin-top: 10px;
-    margin-bottom: 20px;
+
+#ListCommande .command-history .command-details .price {
     display:flex;
     justify-content: space-between;
 }
-.buttons button {
+
+#ListCommande .command-history .command-details .price h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#ListCommande .command-history .command-details .price .prix {
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+#ListCommande .command-history .command-details ul {
+    margin: 5px 0px;
+}
+
+#ListCommande .command-history .command-details li {
+    font-family: Poppins;
+    font-size: 1.1rem;
+}
+
+#ListCommande .command-history .command-details .buttons {
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+#ListCommande .command-history .command-details .buttons button {
     margin-right: 10px;
     color: var(--white);
     padding: 5px 25px;
@@ -78,20 +122,23 @@ h3{
     border-radius: 30px;
     font-weight: 500;
 }
-.remove-button{
+
+#ListCommande .command-history .command-details .buttons .remove-button {
     border: 1px solid var(--green);
     background-color: white;
     color: black !important;
     font-family: Poppins;
 }
-.annuler{
+
+#ListCommande .command-history .command-details .buttons .annuler {
     border: 1px solid #E35052;
     background-color: #E35052;
     font-family: Poppins;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-.add-button{
+
+#ListCommande .command-history .command-details .buttons .add-button{
     border: 1px solid var(--green);
     background-color: var(--green);
     color:white;
@@ -99,42 +146,34 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-.add-button:hover {
+
+#ListCommande .command-history .command-details .buttons .add-button:hover {
     background-color: white;
     color: #5d935c !important
 }
-.annuler:hover {
+
+#ListCommande .command-history .command-details .buttons .annuler:hover {
     background-color: white;
     color: red !important
 }
-#deconnexion:hover{
+
+#ListCommande .command-history .command-details .buttons #deconnexion:hover {
     filter: brightness(0.7) saturate(100%) hue-rotate(0deg) !important;
 }
-#commande{
-    margin-left:23px
-}
-.separator {
-    width: 1px;
-    background-color: white;
-}
-.history1{
+
+#ListCommande .command-history .command-details hr{
     width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--green);
+    position: absolute;
+    bottom: 0px;
 }
-.history2{
-    width: 100%;
-}
-.price{
-    display:flex;
-    justify-content: space-between;
-}
-#prix{
-    font-family: Poppins;
-}
+
 @media screen and (max-width: 1210px) {
-    .command-history {
-        flex-direction: row;
-    }
-    .buttons button {
+
+    #ListCommande .command-history .command-details .buttons button {
         margin-right: 10px;
         color: var(--white);
         padding: 5px 10px;
@@ -142,77 +181,65 @@ h3{
         border-radius: 30px;
         font-weight: 500;
     }
-    p{
+
+    p {
         margin-right: 2em;
         font-size: 1.0rem;
     }
 }
+
 @media screen and (max-width: 1190px) {
-    .command-history {
-        flex-direction: column;
-    }
-    .buttons button {
-        margin-right: 10px;
-        color: var(--white);
-        padding: 5px 10px;
+
+    #ListCommande .command-history .command-details .buttons button {
         font-size: 1.1rem;
-        border-radius: 30px;
-        font-weight: 500;
-    }
-    p{
-        margin-right: 2em;
-        font-size: 1.0rem;
     }
 }
-@media screen and (max-width: 580px) {
-    .command-history {
+
+@media screen and (max-width: 768px) {
+    #ListCommande .command-history .command-details .buttons button {
+        font-size: 0.8rem;
+    }
+
+    #ListCommande .command-history .command-details li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    #ListCommande .command-history {
         flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
     }
-    .buttons button {
-        margin-right: 10px;
-        color: var(--white);
-        padding: 5px 10px;
-        font-size: 1.0rem;
-        border-radius: 30px;
-        font-weight: 500;
+    
+    #ListCommande .command-history::after {
+        display: none;
     }
-    p{
-        margin-right: 2em;
+
+    #ListCommande .command-history .command-details {
+        width: 95%;
+        padding-bottom: 0px;
+    }
+
+    #ListCommande .command-history .command-details hr{
+        position: initial;
+        margin: 20px 0px;
+    }
+
+    #ListCommande .command-history .command-details .buttons button {
         font-size: 1.0rem;
+    }
+
+    #ListCommande .command-history .command-details .buttons {
+        position: initial;
     }
 }
+
 @media screen and (max-width: 450px) {
-    .command-history {
-        flex-direction: column;
-    }
-    .buttons button {
-        margin-right: 10px;
-        color: var(--white);
-        padding: 5px 10px;
+
+    #ListCommande .command-history .command-details .buttons button {
         font-size: 0.8rem;
-        border-radius: 30px;
-        font-weight: 500;
-    }
-    p{
-        margin-right: 2em;
-        font-size: 1.0rem;
-    }
-}
-@media screen and (max-width: 400px) {
-    .command-history {
-        flex-direction: column;
-    }
-    .buttons button {
-        margin-right: 10px;
-        color: var(--white);
-        padding: 5px 10px;
-        font-size: 0.8rem;
-        border-radius: 30px;
-        font-weight: 500;
-    }
-    p{
-        margin-right: 2em;
-        font-size: 1.0rem;
     }
 }
 
