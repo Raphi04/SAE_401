@@ -486,7 +486,7 @@
         margin: 10px 0px 10px 10%;
         font-weight: bold;
     }
-    #recommandation_2{
+    #recommandation_2>h2{
         display: flex;
         width: 100%;
         justify-content: center;
@@ -494,3 +494,10 @@
         font-weight: 600;
     }
 } 
+@media screen and (min-width: 1440px){
+    #accueil_2 #ourMenu_2 {
+        margin-top: 0%;
+        margin-bottom: 1%;
+        height: 39%;
+    }
+}
