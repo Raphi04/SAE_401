@@ -39,7 +39,7 @@ Class Box {
 
     function getAliments() {
         //On récupère les informations de boxAliments
-        $sqlQuery = "SELECT aliments.nom, quantité FROM boxAliments INNER JOIN aliments ON boxaliments.idAliment = aliments.id WHERE idBox=:id;";
+        $sqlQuery = "SELECT aliments.nom, quantité FROM boxaliments INNER JOIN aliments ON boxaliments.idAliment = aliments.id WHERE idBox=:id;";
         $stmt = $this->conn->prepare($sqlQuery);
         $options = [
             "id" => $this->id

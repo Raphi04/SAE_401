@@ -36,4 +36,8 @@ export class MenuComponent implements OnInit {
       this.boxes = boxes;
     })
   }
+
+  filtre(){
+    
+  }
 }
