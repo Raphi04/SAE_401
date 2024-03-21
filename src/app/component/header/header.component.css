@@ -64,7 +64,7 @@
     left: 0px;
     width: calc(100% - 60px);
     height: 55px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
@@ -139,24 +139,21 @@
         height: 50px;
     }
 }
-@media screen and (min-width: 2560px){
+@media screen and (min-width: 1024px){
+    .appTitle{
+        cursor: pointer;
+    }
     #header1 {
-        height: 97px;
+        display: none;
     }
     #header2 {
+        height: 50px;
+        display: flex;
+    }
+}
+@media screen and (min-width: 2560px){
+    #header2 {
         height: 97px;
-    }
-    #header1 > .appTitle{
-        width: 230px;
-    }
-    #header1 > div > #bag {
-        width: 60px;
-    }
-    #header1 > div > #bagTotalCount {
-        border: 4px solid var(--green);
-        font-size: 27px;
-        width: 32px;
-        height: 32px;
     }
     #accueil_2 #ourMenu_2 h2 {
         font-size: 2.4rem;

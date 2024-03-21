@@ -449,6 +449,9 @@
 
 @media screen and (min-width: 1024px)
 {
+    #accueil_2 {
+        height: calc(100%);
+    }
     #accueil{
         display:none;
     }

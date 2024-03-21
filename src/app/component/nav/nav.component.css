@@ -24,3 +24,8 @@ nav img {
 .active img {
     filter: grayscale(0) !important;
 }
+@media screen and (min-width: 1024px){
+    nav{
+        display: none;
+    }
+}
