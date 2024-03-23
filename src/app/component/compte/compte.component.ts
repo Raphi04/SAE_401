@@ -11,6 +11,7 @@ export class CompteComponent implements OnInit {
 
   historique : any = [];
   historiqueEmpty = true;
+  historiqueEmpty2 = true;
 
   constructor(private nav : NavService, private router : Router) {}
 
@@ -38,11 +39,14 @@ export class CompteComponent implements OnInit {
     if(this.historique !== undefined) {
       if(this.historique.length > 0) {
         this.historiqueEmpty = false;
+        this.historiqueEmpty2 = false
       } else {
         this.historiqueEmpty = true;
+        this.historiqueEmpty2 = true
       }  
     } else {
-      this.historique = true;
+      this.historiqueEmpty = true;
+      this.historiqueEmpty2 = true
     }
   }
 

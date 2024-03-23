@@ -1,11 +1,14 @@
 <section id="ListCommande">
 
-    <div>
-        <h1>Mon Profil</h1>
-        <img (click)="disconnectUser()" alt="icon de deconnexion" src="/assets/ressource/icon_deconnexion.png">
-    </div>
-    <h2>Historique des commandes</h2>
-    <hr>
+    <ng-container *ngIf="!historiqueEmpty">
+        <div>
+            <h1>Mon Profil</h1>
+            <img (click)="disconnectUser()" alt="icon de deconnexion" src="/assets/ressource/icon_deconnexion.png">
+        </div>
+        <h2>Historique des commandes</h2>
+        <hr>
+    </ng-container>
+
 
     <div id="divhistoryempty" *ngIf="historiqueEmpty">
         <div id="iddiv">
