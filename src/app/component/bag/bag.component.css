@@ -12,6 +12,7 @@ body{
     width: 21em !important;
     position: absolute;
     top: 0px;
+    right:0px;
 }
 #bambouright{
     width: 13em !important;
