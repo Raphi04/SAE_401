@@ -94,7 +94,7 @@ export class BoxComponent implements OnInit, OnDestroy{
         itemID : this.boxID,
         nom : this.boxInfo[0].nom,
         aliments : this.boxInfo[0].aliments,
-        prixUnité : this.boxInfo[0].prix,
+        prixUnite : this.boxInfo[0].prix,
         quantity : itemNumber
       };
       
@@ -116,7 +116,7 @@ export class BoxComponent implements OnInit, OnDestroy{
           user.bagContent[boxID_InBag].quantity += itemNumber;
           user.bagContent[boxID_InBag].nom = this.boxInfo[0].nom;
           user.bagContent[boxID_InBag].aliments = this.boxInfo[0].aliments;
-          user.bagContent[boxID_InBag].prixUnité = this.boxInfo[0].prix;
+          user.bagContent[boxID_InBag].prixUnite = this.boxInfo[0].prix;
         } else {
           user.bagContent.push(bagItem)
         }

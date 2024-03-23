@@ -43,7 +43,6 @@ export class CompteComponent implements OnInit {
   }
 
   Annuler(id: number) {
-    debugger
     let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
     let currentUser = localStorage.getItem("currentUser");
 

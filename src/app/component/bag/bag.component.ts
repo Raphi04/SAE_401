@@ -48,7 +48,6 @@ export class BagComponent implements OnInit, OnDestroy{
       this.bagBoxes = [];
     }
 
-    
     this.bag.calculTotal();
     this.checkBox();
   }

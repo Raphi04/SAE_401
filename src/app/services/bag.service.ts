@@ -59,7 +59,7 @@ export class BagService {
         let total = 0;
         
         for(let i = 0; i < bagBoxes.length; i++) {
-          let multiplication = bagBoxes[i].prixUnité * bagBoxes[i].quantity;
+          let multiplication = bagBoxes[i].prixUnite * bagBoxes[i].quantity;
           total += multiplication;
         }
         this.totalPrix.next(total);
