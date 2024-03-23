@@ -2,7 +2,23 @@ body{
     background-color: var(--black);
     height:100em;
 }
-
+#bambouleft{
+    width: 13em !important;
+    position: absolute;
+    right: 0px;
+    bottom: -29px;
+}
+#Greentopic{
+    width: 21em !important;
+    position: absolute;
+    top: 0px;
+}
+#bambouright{
+    width: 13em !important;
+    position: absolute;
+    left: 0px;
+    bottom: -29px;
+}
 #ListCommande {
     position: relative;
     width: 100%;
@@ -38,7 +54,6 @@ h1 {
     font-family: Poppins;
     font-size: 1.6rem;
     align-self: flex-start;
-    margin-left: 7px;
 }
 
 p, li{
@@ -64,7 +79,6 @@ h3{
 .command-details h3 {
     margin: 0;
 }
-
 .buttons {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -72,7 +86,6 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
-
 .remove-button{
     border: 1px solid var(--red);
     background-color: var(--red);
@@ -80,7 +93,6 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .add-button{
     border: 1px solid var(--green);
     background-color: var(--green);
@@ -88,7 +100,6 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .commander{
     border: 1px solid var(--green);
     background-color: var(--green);
@@ -115,13 +126,12 @@ h3{
     background-color: #ac3c3e;
     color: var(--white) !important
 }
-a{
+span{
     font-family:Poppins;
     color:#5d935c;
-    margin-right: 7px;
-    margin-left: 7px;
+    cursor: pointer;
 }
-a:hover{
+span:hover{
     color:#246722;
 }
 #commande{
@@ -137,7 +147,6 @@ a:hover{
 #_bag{
     width:auto;
     height:4em;
-    margin-left: 7px;
 }
 .history1{
     width: 100%;
@@ -155,7 +164,7 @@ a:hover{
     margin: 10px 0px;
 }
 #panier{
-    margin:2em;
+    margin:3em;
 }
 #prixT{
     color: var(--green);
@@ -189,10 +198,6 @@ a:hover{
     border-radius: 30px;
     font-weight: 500;
 }
-#sentencep{
-    display:flex;
-    flex-direction: row;
-}
 @media screen and (max-width: 1200px) {
     .command-history {
         flex-direction: column;
@@ -209,6 +214,17 @@ a:hover{
         font-family: Poppins;
         text-align: justify;
         margin-right: 2em;
+    }
+    #Greentopic{
+    top: 318px;
+    offset-rotate: reverse;
+    transform: rotate(49deg);
+    }
+    #bambouleft{
+        display:none;
+    }
+    #bambouright{
+        display:none;
     }
 }
 
@@ -239,12 +255,34 @@ a:hover{
         margin-top: 5%;
         margin-bottom: 35%;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 @media screen and (max-width: 375px) {
     ul {
         padding-left: 27px;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 @media screen and (max-width: 320px) {
@@ -270,8 +308,19 @@ a:hover{
         align-items: baseline;
 
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
 
     #but>#prixT{
         margin-bottom: 10px;
+    }
+    #bambouleft{
+        display:none;
+    }
+    #bambouright{
+        display:none;
     }
 }

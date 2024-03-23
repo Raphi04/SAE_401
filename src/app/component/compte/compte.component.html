@@ -19,6 +19,7 @@
 
         <ng-container *ngFor="let item of historique; let i = index">
             <div class="command-details">
+                <hr>
                 <div class="price">
                     <h3>Commande {{item.commandeNumber}}</h3>
                     <h3 class="prix">{{item.price.toFixed(2)}} €</h3>
@@ -28,11 +29,13 @@
                         <li>{{boxes.nom}} x{{boxes.quantity}}</li>
                     </ng-container>
                 </ul>
+                <div>
                 <div class="buttons">
                     <button href=""class="remove-button">En cours de livraison</button>
                     <button (click)="Annuler(historique.length - i - 1)" class="annuler">Annuler</button>
                 </div>
-                <hr>
+                    <hr>
+                </div>
             </div>
         </ng-container>
     </div>
