@@ -15,6 +15,7 @@ import { ConnexionComponent } from './component/connexion/connexion.component';
 import { InscriptionComponent } from './component/inscription/inscription.component';
 import { BoxComponent } from './component/box/box.component';
 import { BagComponent } from './component/bag/bag.component';
+import { RgpdComponent } from './component/rgpd/rgpd.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BagComponent } from './component/bag/bag.component';
     InscriptionComponent,
     BoxComponent,
     BagComponent,
+    RgpdComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { ConnexionComponent } from './component/connexion/connexion.component';
 import { InscriptionComponent } from './component/inscription/inscription.component';
 import { BoxComponent } from './component/box/box.component';
 import { BagComponent } from './component/bag/bag.component';
+import { RgpdComponent } from './component/rgpd/rgpd.component';
 
 const routes: Routes = [
   { path: "app-header", component: HeaderComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: "app-connexion", component: ConnexionComponent },
   { path: "app-inscription", component: InscriptionComponent },
   { path: "app-bag", component: BagComponent },
+  { path: "app-rgpd", component : RgpdComponent },
   { path: "", redirectTo: "app-demarrage", pathMatch: 'full'},
   { path: "**", redirectTo: "app-connexion" }
 ];

@@ -106,13 +106,13 @@ h3{
 }
 
 .commander:hover {
-    background-color: white;
-    color: #5d935c !important
+    background-color: var(--green-hover);
+    color: var(--white) !important
 }
 
 .remove-button:hover {
-    background-color: white;
-    color: var(--red) !important
+    background-color: #ac3c3e;
+    color: var(--white) !important
 }
 
 #commande{

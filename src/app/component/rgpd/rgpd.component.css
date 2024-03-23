@@ -1,0 +1,33 @@
+section {
+    padding: 100px 20px;
+}
+
+section h1 {
+    font-size: 1.5rem;
+    font-family: Poppins;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    font-family: Poppins;
+    color: var(--green);
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+
+section ul {
+    margin-top: 20px;
+}
+
+section ul li {
+    font-family: Poppins;
+}
