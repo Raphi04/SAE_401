@@ -154,7 +154,7 @@ body{
 
 #ListCommande .command-history .command-details .buttons .annuler:hover {
     background-color: white;
-    color: red !important
+    color: var(--red) !important
 }
 
 #ListCommande .command-history .command-details .buttons #deconnexion:hover {

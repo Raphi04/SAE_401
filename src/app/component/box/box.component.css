@@ -61,7 +61,7 @@
 }
 
 #box > form .errorMessage {
-    color: red;
+    color: var(--red);
     margin-top: 10px;
     font-family: Poppins;
     font-size: 0.9rem;

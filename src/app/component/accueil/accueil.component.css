@@ -225,6 +225,7 @@
 {
     #accueil #recommandationsContainer {
         height: 30%;
+        overflow-y: hidden;
     }
     #accueil #recommandationsContainer .recommandation {
         min-width: 43%;
