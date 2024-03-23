@@ -259,6 +259,17 @@ body{
         margin-right: 2em;
         font-size: 1.0rem;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 @media screen and (max-width: 1190px) {
@@ -266,6 +277,17 @@ body{
     #ListCommande .command-history .command-details .buttons button {
         font-size: 1.1rem;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 @media screen and (max-width: 768px) {
@@ -289,6 +311,17 @@ body{
     #ListCommande .command-history .command-details li {
         font-size: 1rem;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 @media screen and (max-width: 590px) {
@@ -320,6 +353,17 @@ body{
     #ListCommande .command-history .command-details .buttons {
         position: initial;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 @media screen and (max-width: 450px) {
@@ -328,13 +372,37 @@ body{
         font-size: 0.8rem;
     }
 
-    #ListCommande #Greentopic {
-        display: none;
-    }
-
     #ListCommande #bambouleft {
         width: 45% !important;
     }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
+}
+
+@media screen and (max-width: 450px) {
+    #ListCommande > div {
+        margin: 30px 15px;
+    }
+    #Greentopic{
+        top: 318px;
+        offset-rotate: reverse;
+        transform: rotate(49deg);
+        }
+        #bambouleft{
+            display:none;
+        }
+        #bambouright{
+            display:none;
+        }
 }
 
 

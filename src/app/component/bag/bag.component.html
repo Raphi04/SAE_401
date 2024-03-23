@@ -2,7 +2,10 @@
     <div *ngIf="noBoxFound" id="panier">
         <img src="/assets/ressource/Bag.svg" id="_bag">
         <h1>Votre panier Sushiko est vide</h1>
-        <p id="sentencep"><a routerLink="/app-compte">Consultez votre historique de commandes </a> ou <a routerLink="/app-menu"> continuez vos achats.</a></p>
+        <p><span routerLink="/app-compte">Consultez votre historique de commandes </span> ou <span routerLink="/app-menu"> continuez vos achats.</span></p>
+        <img id="bambouleft"src="http://localhost:4200/assets/ressource/bamboo2.svg" alt="image de bambou">
+        <img id="bambouright"src="http://localhost:4200/assets/ressource/bamboo4.svg" alt="image d'un autre bambou">
+        <img id="Greentopic"src="http://localhost:4200/assets/ressource/greenTopRight2.svg" alt="Green Topic">
     </div>
     <div id="commande" routerLink="/app-bag" routerLinkActive="active" *ngIf="!noBoxFound">
         <h1>Commande(s)</h1>
