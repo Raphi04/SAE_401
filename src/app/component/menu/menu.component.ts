@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+// @ts-ignore
+import { filter} from '../../filter.js';
 import { BoxService } from '../../services/box.service';
 import { NavService } from '../../services/nav.service';
 import { Router } from '@angular/router';
@@ -39,7 +41,7 @@ export class MenuComponent implements OnInit {
     })
   }
 
-  filtre(){
-    
+  filtre(filtre:string){
+    filter(filtre)
   }
 }

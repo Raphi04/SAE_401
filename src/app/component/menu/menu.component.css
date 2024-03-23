@@ -136,3 +136,6 @@
     align-items: center;
 }
 
+.displayNone{
+    display: none !important;
+}
