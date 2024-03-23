@@ -1,5 +1,9 @@
 <section id="ListCommande">
-    <p *ngIf="noBoxFound"><br><br><br><br><br><br><br>Pas de box</p>
+    <div *ngIf="noBoxFound" id="panier">
+        <img src="/assets/ressource/Bag.svg" id="_bag">
+        <h1>Votre panier Sushiko est vide</h1>
+        <p id="sentencep"><a routerLink="/app-compte">Consultez votre historique de commandes </a> ou <a routerLink="/app-menu"> continuez vos achats.</a></p>
+    </div>
     <div id="commande" routerLink="/app-bag" routerLinkActive="active" *ngIf="!noBoxFound">
         <h1>Commande(s)</h1>
         <hr>
