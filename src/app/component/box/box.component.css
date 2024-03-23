@@ -8,6 +8,7 @@
     padding: 90px 30px 0px 30px;
     background-color: var(--white);
     color: var(--black);
+    overflow: auto;
 }
 
 #box > #bamboo{
@@ -45,6 +46,11 @@
     object-fit: cover;
     object-position: center center;
     z-index: 2;
+}
+
+
+#box ul {
+    padding-left: 20px;
 }
 
 #box ul li {
@@ -117,4 +123,266 @@
 
 #box #selection:hover, #box #selection:active {
     background-color: var(--green-hover);
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////// BOX DESKTOP //////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+#box2 {
+    position: relative;
+    width: calc(100% - 60px);
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 120px 30px 0px 30px;
+    background-color: var(--white);
+    color: var(--black);
+    overflow: auto;
+    z-index: 2;
+    display: none;
+}
+
+#box2 > #bamboo{
+    position: absolute;
+    width: 20%;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#box2 > #greenTopLeft {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    z-index: 0;
+}
+
+#box2 > #greenTopRight2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 22%;
+    z-index: 0;
+}
+
+#box2 #allInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+#box2 #allInfos h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#box2 #allInfos #price {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 600;
+    color: var(--green);
+}
+
+#box2 #allInfos #boxImage {
+    margin: 15px 0px;
+    width: 50%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 2;
+}
+
+#box2 #allInfos > div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+#box2 #allInfos div ul {
+    padding-left: 20px;
+}
+
+#box2 #allInfos div ul li {
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+
+#box2 #allInfos div > form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start ;
+}
+
+#box2 #allInfos div > form .errorMessage {
+    color: red;
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 0.9rem;
+}
+
+#box2 #allInfos div > form > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#box2 #allInfos div > form > div > button {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: Poppins;
+    border: none;
+    outline: none;
+    padding: 0px 9px;
+    border-radius: 5px;
+}
+
+#box2 #allInfos div > form > div > button:hover, #box > form > div > button:focus {
+    background-color: var(--green-hover);
+    transition: 0.3s background-color linear;
+    cursor: pointer;
+}
+
+#box2 #allInfos div > form > div > input {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    text-align: center;
+    width: 2.3ch;
+    border-radius: 5px;
+    box-shadow: inset -1px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid white;
+}
+
+#box2 #allInfos div #selection {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Poppins;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s background-color linear;
+    cursor: pointer;
+}
+
+#box2 #allInfos div #selection:hover, #box #selection:active {
+    background-color: var(--green-hover);
+}
+
+#box2 hr {
+    width: 80%;
+    margin: 30px 0px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid var(--green);
+}
+
+#box2 #others {
+    background-color: var(--green);
+    color: white;
+    padding: 10px 30px;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    transition: background-color 0.3s linear;
+}
+
+#box2 #others:hover {
+    background-color: var(--green-hover);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 425px) {
+
+    #box #selection {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #box #boxImage {
+        width: 70%;
+    }
+
+    #box #bamboo {
+        width: 20%;
+    }
+    
+    #box #greenTopRight2 {
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+     #box2 {
+        display: flex;
+     }
+
+     #box {
+        display: none;
+     }
+}
+
+@media screen and (min-width: 1024px) {
+    #box2 #bamboo {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #box2 #bamboo {
+        width: 15%;
+    }
+    
+    #box2 #allInfos #boxImage {
+        width: 40%;
+    }
+
+    #box2 #allInfos h2 {
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+
+    #box2 #allInfos #price {
+        font-size: 1.7rem;
+        font-family: Poppins;
+        font-weight: 600;
+        color: var(--green);
+        margin-bottom: 15px;
+    }
+
+    #box2 #allInfos div ul li {
+        font-size: 1.1rem;
+    }
+    
+    #box2 #allInfos div > form > div > button {
+        font-size: 1.5rem;
+        padding: 0px 10px;
+    }
+
+    #box2 #allInfos div > form > div > input {
+        font-size: 1.2rem;
+    }
+
+    #box2 #allInfos div > form .errorMessage {
+        font-size: 1rem;
+    }
+    
+    #box2 #allInfos div #selection {
+        font-size: 1.2rem;
+    }
 }

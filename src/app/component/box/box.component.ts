@@ -97,7 +97,6 @@ export class BoxComponent implements OnInit, OnDestroy{
         prixUnité : this.boxInfo[0].prix,
         quantity : itemNumber
       };
-      console.log(this.boxInfo);
       
       //Si bagContent existe, alors on push directement l'item de dedans sinon on le créer
       if("bagContent" in user) {
@@ -126,6 +125,8 @@ export class BoxComponent implements OnInit, OnDestroy{
         user.bagContent = [];
         user.bagContent.push(bagItem)
       }
+
+      this.router.navigate([`/app-menu`]);
     }
 
     //On applique la modification

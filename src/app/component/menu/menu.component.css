@@ -168,11 +168,11 @@
 @media screen and (min-width: 768px) {
 
     #menu > #bamboo {
-        width: 30%;
+        width: 20%;
     }
 
     #menu > #greenTopRight2 {
-        width: 30%;
+        width: 22%;
     }
 
     #menu > #filterContainer .filter {
@@ -181,6 +181,7 @@
     }
 
     #menu  #allBoxes .box{
+        width: 48%;
         min-height: 200px;
         max-height: 200px;
     }
@@ -271,8 +272,8 @@
 
     #menu > #allBoxes > .box {
         width: 23%;
-        min-height: 200px;
-        max-height: 200px;
+        min-height: 230px;
+        max-height: 230px;
     }    
 
     #menu > #allBoxes > .box > .fav {

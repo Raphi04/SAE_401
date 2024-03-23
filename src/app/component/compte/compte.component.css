@@ -144,7 +144,7 @@ body{
     color:white;
     font-family: Poppins;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s linear, color 0.3s linear;
 }
 
 #ListCommande .command-history .command-details .buttons .add-button:hover {
@@ -153,8 +153,8 @@ body{
 }
 
 #ListCommande .command-history .command-details .buttons .annuler:hover {
-    background-color: white;
-    color: var(--red) !important
+    background-color: #ac3c3e;
+    border-color: #ac3c3e;
 }
 
 #ListCommande .command-history .command-details .buttons #deconnexion:hover {
