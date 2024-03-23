@@ -1,5 +1,5 @@
-<div>
-    <nav *ngIf="showNav">
+<div *ngIf="showNav">
+    <nav>
         <a [ngClass]="{'active': activeNav == 'home'}" (click)="changeActiveNav('home')" routerLink="/app-accueil"><img src="/assets/ressource/home.svg"></a>
         <a [ngClass]="{'active': activeNav == 'menu'}" (click)="changeActiveNav('menu')" routerLink="/app-menu"><img src="/assets/ressource/menu.svg"></a>
         <a [ngClass]="{'active': activeNav == 'compte'}" (click)="changeActiveNav('compte')" routerLink="/app-compte"><img src="/assets/ressource/compte.svg"></a>

@@ -3,16 +3,16 @@
     <img src="/assets/ressource/bamboo2.svg" id="bamboo">
     <h2>Nos Menus</h2>
     <div id="filterContainer">
-        <div class="filter selected" id="tout" (click)="filtre('tout')">Tout</div>
-        <div class="filter" id="avocat" (click)="filtre('avocat')">Avocat</div>
-        <div class="filter" id="fromage" (click)="filtre('fromage')">Fromage</div>
-        <div class="filter" id="coriande" (click)="filtre('coriande')">Coriande</div>
-        <div class="filter" id="viande" (click)="filtre('viande')">Viande</div>
-        <div class="filter" id="thon" (click)="filtre('thon')">Thon</div>
-        <div class="filter" id="crevette" (click)="filtre('crevette')">Crevette</div>
-        <div class="filter" id="spicy" (click)="filtre('spicy')">Spicy</div>
-        <div class="filter" id="sl" (click)="filtre('sl')">Seriole Lalandi</div>        
-        <div class="filter" id="saumon" (click)="filtre('saumon')">Saumon</div>
+        <div class="filter selected" id="tout" (click)="filtre('tout')"><p>Tout</p></div>
+        <div class="filter" id="avocat" (click)="filtre('avocat')"><p>Avocat</p></div>
+        <div class="filter" id="fromage" (click)="filtre('fromage')"><p>Fromage</p></div>
+        <div class="filter" id="coriande" (click)="filtre('coriande')"><p>Coriande</p></div>
+        <div class="filter" id="viande" (click)="filtre('viande')"><p>Viande</p></div>
+        <div class="filter" id="thon" (click)="filtre('thon')"><p>Thon</p></div>
+        <div class="filter" id="crevette" (click)="filtre('crevette')"><p>Crevette</p></div>
+        <div class="filter" id="spicy" (click)="filtre('spicy')"><p>Spicy</p></div>
+        <div class="filter" id="sl" (click)="filtre('sl')"><p>Seriole&nbsp;Lalandi</p></div>        
+        <div class="filter" id="saumon" (click)="filtre('saumon')"><p>Saumon</p></div>
     </div>
     <div id="allBoxes">
         <div *ngFor="let box of boxes" [ngClass]="box?.saveurs" class="box" (click)="selectBoxID(box.id);" style="background-image: url('/assets/ressource/box/{{box?.image}}.png');">
