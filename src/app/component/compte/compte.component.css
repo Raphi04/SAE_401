@@ -6,7 +6,7 @@ body{
     width: 13em !important;
     position: absolute;
     right: 0px;
-    bottom: -29px;
+    bottom: -30px;
 }
 #Greentopic{
     width: 21em !important;
@@ -251,6 +251,19 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+
+    #ListCommande #Greentopic {
+        width: 30% !important;
+    }
+
+    #ListCommande #bambouright {
+        display: none;
+    }
+
+    #ListCommande #bambouleft {
+        width: 20% !important;
+    }
+
     #ListCommande .command-history .command-details .buttons button {
         font-size: 0.8rem;
     }
@@ -296,6 +309,21 @@ body{
     #ListCommande .command-history .command-details .buttons button {
         font-size: 0.8rem;
     }
+
+    #ListCommande #Greentopic {
+        display: none;
+    }
+
+    #ListCommande #bambouleft {
+        width: 45% !important;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    #ListCommande > div {
+        margin: 30px 15px;
+    }
+}
+
 
 
