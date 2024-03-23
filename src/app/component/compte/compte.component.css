@@ -2,29 +2,34 @@ body{
     background-color: var(--black);
     height:100em;
 }
-#bambouleft{
+
+#bambouleft {
     width: 13em !important;
     position: absolute;
     right: 0px;
     bottom: -30px;
 }
-#Greentopic{
+
+#Greentopic {
     width: 21em !important;
     position: absolute;
     right: 0px;
     top: 0px;
 }
-#bambouright{
+
+#bambouright {
     width: 13em !important;
     position: absolute;
     left: 0px;
     bottom: -29px;
 }
-.messageempty{
+
+.messageempty {
     font-family:Poppins;
     font-size:27px;
     margin-bottom:2px;
 }
+
 #ListCommande {
     display: flex;
     flex-direction: column;
@@ -39,33 +44,41 @@ body{
 
 #ListCommande > div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 50px);
     padding: 0px 25px;
     border-radius: 10px;
     width: auto;
-    margin: 30px;
+    flex-direction: row;
+}
+
+#iddiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ListCommande > #divhistoryempty {
+    margin-top: 15px;
     flex-direction: column;
-}
-#iddiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#divhistorycempty{
-    flex-direction: row;
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
+
 #ListCommande > div > h1 {
     font-family: Poppins;
     font-size: 2.3rem;
     font-weight: 600;
     align-self: flex-start;
 }
+
 #ListCommande > div > img {
     width: 35px;
     cursor: pointer;
 }
+
 #ListCommande > h2 {
     margin-top: 10px;
     margin-left: 25px;
@@ -73,15 +86,18 @@ body{
     font-weight: 200;
     font-size: 1.3rem;
 }
-#profil{
+
+#profil {
     font-family:Poppins;
     font-size:31px;
 }
-#HistoComm{
+
+#HistoComm {
     font-family:Poppins;
     font-size:28px;
     margin-bottom:23px;
 }
+
 #ListCommande >  hr {
     margin: 10px 0px;
     display: block;
@@ -94,11 +110,13 @@ body{
     overflow-y: auto;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     padding-bottom: 90px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) transparent;
 }
 .Bmenus{
     border: 1px solid var(--green);
@@ -123,7 +141,7 @@ body{
     left: 50%;
     position: absolute;
     content:"";
-    height: 100%;
+    height: calc(100% - 90px);
     width: 1px;
     border-right: 2px solid var(--green);
 }
@@ -316,12 +334,6 @@ body{
 
     #ListCommande #bambouleft {
         width: 45% !important;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #ListCommande > div {
-        margin: 30px 15px;
     }
 }
 

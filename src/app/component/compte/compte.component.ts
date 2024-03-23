@@ -28,18 +28,22 @@ export class CompteComponent implements OnInit {
     //Récupération de l'historique
     let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
     let currentUser = localStorage.getItem("currentUser");
-
+    
     for(let i = 0; i < allUsers.length; i++) {
-      if(allUsers[i].email = currentUser) {
+      if(allUsers[i].email == currentUser) {
         this.historique = allUsers[i].historique;
       }
     }
-
-    if(this.historique.length > 0) {
-      this.historiqueEmpty = false;
+    
+    if(this.historique !== undefined) {
+      if(this.historique.length > 0) {
+        this.historiqueEmpty = false;
+      } else {
+        this.historiqueEmpty = true;
+      }  
     } else {
-      this.historiqueEmpty = true;
-    }  
+      this.historique = true;
+    }
   }
 
   Annuler(id: number) {
@@ -47,7 +51,7 @@ export class CompteComponent implements OnInit {
     let currentUser = localStorage.getItem("currentUser");
 
     for(let i = 0; i < allUsers.length; i++) {
-      if(allUsers[i].email = currentUser) {
+      if(allUsers[i].email == currentUser) {
         if(allUsers[i].historique[id].commandeNumber == allUsers[i].historiqueLastNumber) {
           allUsers[i].historiqueLastNumber = allUsers[i].historiqueLastNumber - 1;
         }
@@ -63,6 +67,6 @@ export class CompteComponent implements OnInit {
 
   disconnectUser(): void {
     localStorage.removeItem("currentUser");
-    this.router.navigate([`/app-connexion`]);
+    this.router.navigate([`/app-demarrage`]);
   }
 }
