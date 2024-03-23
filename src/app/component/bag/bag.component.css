@@ -2,6 +2,7 @@ body{
     background-color: var(--black);
     height:100em;
 }
+
 #ListCommande {
     position: relative;
     width: 100%;
@@ -12,35 +13,42 @@ body{
     color: var(--black);
     overflow-y:scroll;
 }
+
 #ListCommande #commande {
     margin: 35px;
     padding: 10px 20px 100px 20px;
     border-radius: 10px;
     z-index: 10;
 }
+
 #ListCommande #commande h2 {
     font-family: Poppins;
     font-weight: 600;
     font-size: 1.3rem;
 }
+
 #ListCommande > h2 {
     font-family: Poppins;
     font-size: 1.3rem;
     margin: 25px 0px 15px 10%;
     align-self: flex-start;
 }
+
 h1 {
     font-family: Poppins;
     font-size: 1.6rem;
     align-self: flex-start;
 }
+
 p, li{
     font-family: Poppins;
     font-size: 0.9rem;
 }
+
 h3{
     font-size: 1.6rem;
 }
+
 .command-history {
     display: flex;
     flex-direction: row;
@@ -55,6 +63,7 @@ h3{
 .command-details h3 {
     margin: 0;
 }
+
 .buttons {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -62,6 +71,7 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
+
 .remove-button{
     border: 1px solid var(--red);
     background-color: red;
@@ -69,6 +79,7 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .add-button{
     border: 1px solid var(--green);
     background-color: var(--green);
@@ -76,6 +87,7 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .commander{
     border: 1px solid var(--green);
     background-color: var(--green);
@@ -84,6 +96,7 @@ h3{
     transition: background-color 0.3s, color 0.3s;
     font-size: 1.5em;
 }
+
 .buttons .commander {
     margin-right: 10px;
     color: var(--white);
@@ -91,14 +104,17 @@ h3{
     border-radius: 10px;
     font-weight: 500;
 }
+
 .commander:hover {
     background-color: white;
     color: #5d935c !important
 }
+
 .remove-button:hover {
     background-color: white;
     color: red !important
 }
+
 #commande{
     margin-left:23px
 }
@@ -111,12 +127,15 @@ h3{
     width: 1px;
     background-color: white;
 }
+
 .history1{
     width: 100%;
 }
+
 .history2{
     width: 100%;
 }
+
 .price{
     display:flex;
     align-items: center;
@@ -124,15 +143,18 @@ h3{
     align-items: center;
     margin: 10px 0px;
 }
+
 #prixT{
     color: var(--green);
     font-family: Poppins;
     text-decoration: underline;
     font-size: 1.3em;
 }
+
 #prix{
     font-family:Poppins;
 }
+
 #quantite{
     border-radius: 30px;
     color: var(--white);
@@ -143,6 +165,7 @@ h3{
     transition: background-color 0.3s, color 0.3s;
     width: 3em;
 }
+
 .buttons button {
     margin-right: 10px;
     color: var(--white);
@@ -153,6 +176,7 @@ h3{
     border-radius: 30px;
     font-weight: 500;
 }
+
 @media screen and (max-width: 1200px) {
     .command-history {
         flex-direction: column;

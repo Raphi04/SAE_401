@@ -134,6 +134,7 @@ export class BoxComponent implements OnInit, OnDestroy{
   }
   
   ngOnInit(): void {
+    this.bag.checkNewBag();
     this.nav.changeActive("menu");
     let currentUser = localStorage.getItem("currentUser") || "";
     if (currentUser == "") {

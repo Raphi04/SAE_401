@@ -1,8 +1,16 @@
-nav {
+div {
     position: fixed;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
+    padding: 10px 0px;
+    bottom: 0px;
+    background-color: rgba(255 , 255, 255, 0.98);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+div > nav {
     background-color: var(--white);
     width: 85%;
     display: flex;
@@ -11,21 +19,19 @@ nav {
     border: 2px solid var(--green);
     border-radius: 30px;
     padding: 7px 0px;
-    z-index: 10;
-    box-shadow: 0px 40px 60px 75px var(--white);
 }
 
-nav img {
+div >nav img {
     width: 35px;
     filter: grayscale(1);
 }
 
-
 .active img {
     filter: grayscale(0) !important;
 }
+
 @media screen and (min-width: 1024px){
-    nav{
+    div nav{
         display: none;
     }
 }

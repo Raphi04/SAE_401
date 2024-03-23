@@ -12,10 +12,12 @@
         </ul>
     </ng-container>
     <form [formGroup]="addItemForm">
-        <input type="number" formControlName="itemNumber" max="{{maxLength}}" min="{{minLength}}">
-        <p *ngIf="maxLength == 0" class="errorMessage">Vous ne pouvez pas commander plus de dix box en même temps</p>
+        <div>
+            <button (click)="minus()">-</button>
+            <input type="number" formControlName="itemNumber" max="{{maxLength}}" min="{{minLength}}">
+            <button (click)="add()">+</button>
+        </div>
+        <p *ngIf="maxLength == 0" class="errorMessage">*Vous ne pouvez pas commander plus de dix box en même temps.</p>
         <button type="submit" id="selection" (click)="onSubmit()" [disabled]="maxLength == 0">Ajouter</button>
-        <button (click)="add()">+</button>
-        <button (click)="minus()">-</button>
     </form>
 </section>

@@ -3,6 +3,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BoxService } from '../../services/box.service';
 import { NavService } from '../../services/nav.service';
 import { Router } from '@angular/router';
+import { BagService } from '../../services/bag.service';
 
 @Component({
   selector: 'app-menu',
@@ -14,11 +15,12 @@ export class MenuComponent implements OnInit {
   //Définition de la variable qui permet de récupérer les boxes
   boxes: any[] = [];
 
-  constructor(private http : HttpClient, private box : BoxService, private nav : NavService, private router : Router) {
+  constructor(private http : HttpClient, private box : BoxService, private nav : NavService, private router : Router, private bag : BagService) {
     this.loadBoxes();
   }
 
   ngOnInit(): void {
+    this.bag.checkNewBag();
     this.nav.changeActive("menu");
     let currentUser = localStorage.getItem("currentUser") || "";
     if (currentUser == "") {

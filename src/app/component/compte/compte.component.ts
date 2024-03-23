@@ -29,16 +29,10 @@ export class CompteComponent implements OnInit {
     let allUsers = JSON.parse(localStorage.getItem("allUsers") || "[]");
     let currentUser = localStorage.getItem("currentUser");
 
-    //Reverse historique
-    let toRreverseHistorique
     for(let i = 0; i < allUsers.length; i++) {
       if(allUsers[i].email = currentUser) {
-        toRreverseHistorique = allUsers[i].historique;
+        this.historique = allUsers[i].historique;
       }
-    }
-
-    for(let i = toRreverseHistorique.length ; i !== 0; i--) {
-      this.historique.push(toRreverseHistorique[i-1]);
     }
 
     if(this.historique.length > 0) {

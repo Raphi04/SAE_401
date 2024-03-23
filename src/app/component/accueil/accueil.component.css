@@ -6,14 +6,14 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     color: var(--black);
     background-color: var(--white);
 }
 
 #accueil > #bamboo{
     position: absolute;
-    width: 50%;
+    width: 45%;
     bottom: 0px;
     right: 0px;
     z-index: 1;
@@ -133,7 +133,7 @@
     overflow-x: scroll;
     padding-bottom: 15px;
     scrollbar-width: thin;
-    scrollbar-color: var(--green) var(--black);
+    scrollbar-color: var(--green) transparent;
     z-index: 2;
 
 }
@@ -199,6 +199,7 @@
     padding-left: 0;
     padding-right: 10px;
 }
+
 @media screen and (min-width: 425px)
 {
     #accueil #ourMenu {
@@ -388,7 +389,7 @@
     overflow-x: scroll;
     padding-bottom: 15px;
     scrollbar-width: thin;
-    scrollbar-color: var(--green) var(--black);
+    scrollbar-color: var(--green) transparent;
     z-index: 2;
 
 }

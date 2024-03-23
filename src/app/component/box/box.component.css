@@ -12,7 +12,7 @@
 
 #box > #bamboo{
     position: absolute;
-    width: 50%;
+    width: 45%;
     bottom: 0px;
     right: 0px;
     z-index: 1;
@@ -52,6 +52,55 @@
     font-size: 1rem;
 }
 
+
+#box > form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start ;
+}
+
+#box > form .errorMessage {
+    color: red;
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 0.9rem;
+}
+
+#box > form > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#box > form > div > button {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: Poppins;
+    border: none;
+    outline: none;
+    padding: 0px 9px;
+    border-radius: 5px;
+}
+
+#box > form > div > button:hover, #box > form > div > button:focus {
+    background-color: var(--green-hover);
+    transition: 0.3s background-color linear;
+    cursor: pointer;
+}
+
+#box > form > div > input {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    text-align: center;
+    width: 2.3ch;
+    border-radius: 5px;
+    box-shadow: inset -1px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid white;
+}
+
 #box #selection {
     background-color: var(--green);
     color: var(--white);
@@ -60,6 +109,12 @@
     padding: 10px 20px;
     font-size: 1rem;
     font-family: Poppins;
-    border-radius: 30px;
-    margin-top: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s background-color linear;
+    cursor: pointer;
+}
+
+#box #selection:hover, #box #selection:active {
+    background-color: var(--green-hover);
 }
