@@ -1,17 +1,23 @@
 <section id="ListCommande">
-    <div>
-        <h1>Mon Profil</h1>
-        <img (click)="disconnectUser()" alt="icon de deconnexion" src="/assets/ressource/icon_deconnexion.png">
-    </div>
-    <h2>Historique des commandes</h2>
-    <hr>
-
-    <div *ngIf="historiqueEmpty">
-        <p>Il y a pas</p>
-    </div>
-
+        <div id="divhistoryempty"*ngIf="historiqueEmpty">
+            <div id="iddiv">
+                <h1 class="messageempty">Oh Zut !</h1>
+                <img width="44px"(click)="disconnectUser()" alt="icon de deconnexion" src="/assets/ressource/icon_deconnexion.png">
+            </div>
+            <h2 class="messageempty">Vous n'avez pas encore commandé</h2>
+            <button routerLink="/app-menu" class="Bmenus">Voir les menus</button>
+            <img id="bambouleft"src="http://localhost:4200/assets/ressource/bamboo2.svg" alt="image de bambou">
+            <img id="bambouright"src="http://localhost:4200/assets/ressource/bamboo4.svg" alt="image d'un autre bambou">
+            <img id="Greentopic"src="http://localhost:4200/assets/ressource/greenTopRight2.svg" alt="Green Topic">
+        </div>
     <div class="command-history" *ngIf="!historiqueEmpty">
-        <ng-container *ngFor="let item of historique.slice().reverse(); let i = index">
+        <div id="divhistorycempty">
+            <h1 id="profil">Mon Profil</h1>
+            <img width="44px"(click)="disconnectUser()" alt="icon de deconnexion" src="/assets/ressource/icon_deconnexion.png">
+        </div>
+        <h2 id="HistoComm">Historique des commandes</h2>
+
+        <ng-container *ngFor="let item of historique; let i = index">
             <div class="command-details">
                 <div class="price">
                     <h3>Commande {{item.commandeNumber}}</h3>

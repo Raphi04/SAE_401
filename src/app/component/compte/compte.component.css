@@ -2,6 +2,29 @@ body{
     background-color: var(--black);
     height:100em;
 }
+#bambouleft{
+    width: 13em !important;
+    position: absolute;
+    right: 0px;
+    bottom: -29px;
+}
+#Greentopic{
+    width: 21em !important;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#bambouright{
+    width: 13em !important;
+    position: absolute;
+    left: 0px;
+    bottom: -29px;
+}
+.messageempty{
+    font-family:Poppins;
+    font-size:27px;
+    margin-bottom:2px;
+}
 #ListCommande {
     display: flex;
     flex-direction: column;
@@ -16,25 +39,33 @@ body{
 
 #ListCommande > div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 50px);
+    justify-content: flex-start;
     padding: 0px 25px;
     border-radius: 10px;
+    width: auto;
+    margin: 30px;
+    flex-direction: column;
 }
-
+#iddiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#divhistorycempty{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
 #ListCommande > div > h1 {
     font-family: Poppins;
     font-size: 2.3rem;
     font-weight: 600;
     align-self: flex-start;
 }
-
 #ListCommande > div > img {
     width: 35px;
     cursor: pointer;
 }
-
 #ListCommande > h2 {
     margin-top: 10px;
     margin-left: 25px;
@@ -42,7 +73,15 @@ body{
     font-weight: 200;
     font-size: 1.3rem;
 }
-
+#profil{
+    font-family:Poppins;
+    font-size:31px;
+}
+#HistoComm{
+    font-family:Poppins;
+    font-size:28px;
+    margin-bottom:23px;
+}
 #ListCommande >  hr {
     margin: 10px 0px;
     display: block;
@@ -55,13 +94,30 @@ body{
     overflow-y: auto;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     padding-bottom: 90px;
 }
-
+.Bmenus{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    font-family: Poppins;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 24px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top:12px;
+}
+.Bmenus:hover {
+    background-color: white;
+    color: #5d935c !important
+}
 #ListCommande .command-history::after {
     top: 0px;
     left: 50%;
@@ -160,7 +216,6 @@ body{
 #ListCommande .command-history .command-details .buttons #deconnexion:hover {
     filter: brightness(0.7) saturate(100%) hue-rotate(0deg) !important;
 }
-
 #ListCommande .command-history .command-details hr{
     width: 100%;
     display: block;
