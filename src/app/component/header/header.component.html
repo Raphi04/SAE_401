@@ -1,5 +1,5 @@
-<header id="header1" *ngIf="showHeader" routerLink="app-rgpd">
-    <img routerLink="/app-accueil" src="/assets/ressource/SushiCoBlack.svg" class="appTitle">
+<header id="header1" *ngIf="showHeader">
+    <img routerLink="/app-accueil" src="/assets/ressource/SushiCoBlack.svg" class="appTitle" routerLink="app-rgpd">
     <div routerLink="/app-bag" id="sph1">
         <img src="/assets/ressource/Bag.svg" id="bag" [ngClass]="{'activeBag' : isActive}">
         <div id="bagTotalCount">{{itemNumber}}</div>
@@ -8,9 +8,9 @@
 
 <!--header-pc-->
 
-<header id="header2" *ngIf="showHeader" routerLink="app-rgpd">
+<header id="header2" *ngIf="showHeader">
     <div>
-        <img routerLink="/app-accueil" src="/assets/ressource/SushiCoBlack.svg" class="appTitle">
+        <img routerLink="/app-accueil" src="/assets/ressource/SushiCoBlack.svg" class="appTitle" routerLink="app-rgpd">
     </div>
     <div id="navbar2">
         <div routerLink="/app-accueil">
