@@ -176,7 +176,9 @@ h3{
     border-radius: 30px;
     font-weight: 500;
 }
-
+#but{
+    margin-top: 5%;
+}
 @media screen and (max-width: 1200px) {
     .command-history {
         flex-direction: column;
@@ -220,7 +222,6 @@ h3{
         font-size: 1.4rem;
     }
     #but{
-        margin-top: 5%;
         margin-bottom: 35%;
     }
 }
