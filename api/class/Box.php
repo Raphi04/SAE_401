@@ -49,7 +49,7 @@ Class Box {
         if($stmt->execute($options)) {
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            //On créer un tableau de tableau contenant les informations sur les alliments
+            //On créer un tableau de tableau contenant les informations sur les aliments
             $allAliments = [];
             $oneAliment = [];
             foreach($results as $result) {
@@ -75,7 +75,7 @@ Class Box {
         if($stmt->execute($options)) {
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            //On créer un tableau contenant les informations sur les alliments
+            //On créer un tableau contenant les informations sur les aliments
             $allSaveur = [];
             foreach($results as $result) {
                 $allSaveur[] = $result["nom"];
