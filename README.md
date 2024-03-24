@@ -35,10 +35,13 @@ Notre application porte le nom de Sushi.ko et a pour logo :
 ### Architecture de l'application
 Vous trouverez ci-joint l'architecture de l'application SUSHI.KO :
 [Architecture](architecture.txt)
+
 ## LIVRABLE  L401_2
 Vous trouverez ci-joint les codes d'implémentation de l'API REST ainsi que son architecture.
 
 ![Architecture de la partie back de l'application](images/Architecture_Back.png)
+
+https://github.com/Raphi04/SAE_401/tree/master/api
 
 ## LIVRABLE  L401_3
 Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, détails.
