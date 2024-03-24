@@ -35,9 +35,13 @@ Notre application porte le nom de Sushi.ko et a pour logo :
 ### Architecture de l'application
 Vous trouverez ci-joint l'architecture de l'application SUSHI.KO :
 [Architecture](architecture.txt)
+## LIVRABLE  L401_2
+Vous trouverez ci-joint les codes d'implémentation de l'API REST ainsi que son architecture.
+
+![Architecture de la partie back de l'application](images/Architecture_Back.png)
 
 ## LIVRABLE  L401_3
-Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, détails
+Vous trouverez ci-joint les maquettes des pages suivantes : accueil, panier, détails.
 
 [Maquette](https://www.figma.com/file/YewJCHIxcp26KI8tOVMFAp/Untitled?type=design&node-id=0%3A1&mode=design&t=4KNuZF73xHuQtkNl-1)
 
@@ -50,8 +54,6 @@ https://github.com/Raphi04/SAE_401/commits/master/
 ## LIVRABLE  L401_5
 Vous retrouverez dans ce document le compte rendue des tests unitaires, la page pour la prise en compte des droits RGPD ainsi que les deux scénarios malveillants et les mesures pour les contrecarrer.
 
-### Compte-Rendue des tests-unitaires
-(en attente)
 ### Prise en compte des droits RGPD
 Dernière mise à jour : 18/03/24
 
