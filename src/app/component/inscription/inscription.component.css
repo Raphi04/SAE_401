@@ -92,6 +92,7 @@ section > #connexionButton {
     background-color: var(--white);
     border: 1px solid var(--green);
     border-radius: 4px;
+    z-index: 2;
 }
 
 section > form > #inscriptionButton {
@@ -105,6 +106,7 @@ section > form > #inscriptionButton {
     text-align: center;
     border: 1px solid var(--green);
     border-radius: 4px;
+    z-index: 2;
 }
 
 .errorInput {

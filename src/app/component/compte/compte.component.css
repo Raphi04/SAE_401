@@ -57,6 +57,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+}
+
+#iddiv img {
+    width: 35px;
 }
 
 #ListCommande > #divhistoryempty {
@@ -374,23 +379,6 @@ body{
 
     #ListCommande #bambouleft {
         width: 45% !important;
-    }
-    #Greentopic{
-        top: 318px;
-        offset-rotate: reverse;
-        transform: rotate(49deg);
-        }
-        #bambouleft{
-            display:none;
-        }
-        #bambouright{
-            display:none;
-        }
-}
-
-@media screen and (max-width: 450px) {
-    #ListCommande > div {
-        margin: 30px 15px;
     }
     #Greentopic{
         top: 318px;
